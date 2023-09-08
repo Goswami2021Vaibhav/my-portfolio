@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="shortcut icon" href="{{ asset('favicon-logo.png') }}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/aos.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/lightcase.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}">
+    <!-- main css for template -->
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+
+    <title>Registration Fee</title>
+
+
+</head>
+
+<body>
+
+    <div class="container pt-5 padding-bottom">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="card" style="max-width:700px;width:100%">
+                    <div class="card-header text-center">
+                        <h5>Registration Fee</h5>
+                    </div>
+                    <div class="card-body" id="payment-box">
+
+                        @if (session()->has('payment_id'))
+                            @php
+                                $req_id = $data[0]->request_id;
+                            @endphp
+                            <table class="table table-borderless table-striped w-100">
+                                <tr>
+                                    <th>Full Name</th>
+                                    <td>{{ $data[0]->buyer_name }}</td>
+                                </tr>
+                                <tr>
+                                    <th>Email</th>
+                                    <td>{{ $data[0]->email }}</td>
+                                </tr>
+                                <tr>
+                                    <th>Phone Number</th>
+                                    <td>{{ $data[0]->phone }}</td>
+                                </tr>
+                                <tr>
+                                    <th>Amount</th>
+                                    <td>Rs. {{ $data[0]->amount }}</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="text-center py-3">
+                                        <button type="button" onclick="PayClick('{{ $data[0]->longurl }}')"
+                                            class="py-3 trk-btn trk-btn--border trk-btn--secondary2">Click
+                                            Here To Pay Now
+                                            </span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="text-center">
+                                        <a href="{{ route('frontend.index') }}" class="text-decoration-underline">Back
+                                            To Home</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div id="message-id"></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        @else
+                            @php
+                                $req_id = '0';
+                            @endphp
+                            @if (session()->has('status_payment_id'))
+                                @if (session()->get('status_of_subscription'))
+                                    <div class="bg-success p-3">
+                                        <div>
+                                            <p class="text-white text-center"> Thank you for registering. We will
+                                                contact
+                                                you
+                                                shortly.</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <h5>Payment Id : {{ session()->get('status_payment_id') }}</h5>
+                                        </div>
+                                        <div class="text-center">
+                                            <a href="{{ route('frontend.index') }}" class="text-white"
+                                                style="font-size: 14px;text-decoration: underline">Go
+                                                Back To Home</a>
+                                        </div>
+                                    </div>
+                                @elseif(session()->get('status_of_subscription') == 0)
+                                    <div class="bg-danger p-3">
+                                        <div>
+                                            <p class="text-white text-center"> We received your payment but due to some
+                                                technical
+                                                issue your registration is
+                                                incomplete. Please note your payment id and <a
+                                                    href="{{ route('frontend.contact') }}" class="text-dark"> contact
+                                                </a>to
+                                                our
+                                                support.</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <h5>Payment Id : </h5>
+                                        </div>
+                                        <div class="text-center">
+                                            <a href="{{ route('frontend.index') }}" class="text-white"
+                                                style="font-size: 14px;text-decoration: underline">Go
+                                                Back To Home</a>
+                                        </div>
+                                    </div>
+                                @endif
+                            @endif
+                        @endif
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/js/all.min.js') }}"></script>
+    <script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/js/aos.js') }}"></script>
+    <script src="{{ asset('assets/js/fslightbox.js') }}"></script>
+    <script src="{{ asset('assets/js/purecounter_vanilla.js') }}"></script>
+
+    <script src="{{ asset('assets/js/custom.js') }}"></script>
+    <script src="https://js.instamojo.com/v1/checkout.js"></script>
+    <script>
+       
+       
+       $.ajaxSetup({
+            headers: {
+                "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
+            },
+        });
+
+        function PayClick(url) {
+            Instamojo.open(url);
+        }
+
+
+
+        function onCloseHandler() {
+            $.ajax({
+                type: "Post",
+                url: "/front-ajax",
+                data: {
+                    isset_check_payment_status: true
+                },
+                success: function(response) {
+                    if (response['status'] === true) {
+                        window.location.href = response['redirect']
+                    } else {
+                        window.location.href = response['redirect']
+                    }
+                }
+            });
+        }
+
+        function onPaymentSuccessHandler(response) {
+
+            $.ajax({
+                type: "Post",
+                url: "/final-registration",
+                data: {
+                    paymentId: response['paymentId'],
+                },
+                success: function(response) {
+                    // window.location.href = response['redirect']
+                    if (response['status'] === true) {
+                        $('#payment-box').html(`
+                         <div class="bg-success p-3">
+                            <div>
+                                <p class="text-white text-center"> Thank you for registering. We will contact you
+                                    shortly.</p>
+                            </div>
+                            <div class="text-center">
+                                <h5>Payment Id : ${response['paymentId']}</h5>
+                            </div>
+                            <div class="text-center">
+                                <a href="{{ route('frontend.index') }}" class="text-white"
+                                    style="font-size: 14px;text-decoration: underline">Go
+                                    Back To Home</a>
+                            </div>
+                        </div>
+                         `)
+                    } else {
+                        $('#payment-box').html(`
+                        <div class="bg-danger p-3">
+                            <div>
+                                <p class="text-white text-center"> We received your payment but due to some technical
+                                    issue your registration is
+                                    incomplete. Please note your payment id and <a
+                                        href="{{ route('frontend.contact') }}" class="text-dark"> contact </a>to our
+                                    support.</p>
+                            </div>
+                            <div class="text-center">
+                                <h5>Payment Id : ${response['paymentId']}</h5>
+                            </div>
+                            <div class="text-center">
+                                <a href="{{ route('frontend.index') }}" class="text-white"
+                                    style="font-size: 14px;text-decoration: underline">Go
+                                    Back To Home</a>
+                            </div>
+                        </div>
+                         `)
+                    }
+                }
+            });
+        }
+
+        function onPaymentFailureHandler(response) {
+            $('#message-id').html(`
+               <div class="alert alert-danger" role="alert">
+                <strong>Payment Failed 
+               </div>
+             `)
+        }
+        /* End client-defined Callback Handler Functions */
+
+        /* Configuring Handlers */
+        Instamojo.configure({
+            handlers: {
+                onClose: onCloseHandler,
+                onSuccess: onPaymentSuccessHandler,
+                onFailure: onPaymentFailureHandler
+            }
+        });
+    </script>
+
+</body>
+
+
+</html>
