@@ -9,9 +9,9 @@
             <div class="container">
                 <div class="hero__section--inner d-flex align-items-center">
                     <div class="hero__thumbnail position__relative">
-                        <img class="hero__thumbnail--media light_img" src="{{ asset('assets/img/hero/hero-thumbnail.png') }}"
+                        <img class="hero__thumbnail--media light_img" src="{{ asset('assets/img/hero-thumbnail.webp') }}"
                             alt="img">
-                        <img class="hero__thumbnail--media dark_img" src="{{ asset('assets/img/hero/hero-man-dark.png') }}"
+                        <img class="hero__thumbnail--media dark_img" src="{{ asset('assets/img/hero-man-dark.webp') }}"
                             alt="img">
                         <div class="projects__budget d-flex align-items-center">
                             <span class="projects__budget--icon">
@@ -196,13 +196,15 @@
                                 <li class="about__info--items">Languages: English, Hindi</li>
                                 <li class="about__info--items">Email: goswamivaibhav72@gmail.com</li>
                             </ul>
-                            <a class="about__btn primary__btn" href="#"><i class="fa-brands fa-whatsapp"></i>
+                            <a class="about__btn primary__btn"
+                                href="https://api.whatsapp.com/send?phone=+917518445857&text=Hi%20Vaibhav%20Goswami"><i
+                                    class="fa-brands fa-whatsapp"></i>
                                 Whatsapp</a>
                         </div>
                     </div>
                     <div class="about__thumbnail">
                         <div class="about__thumbnail--media position__relative">
-                            <img class="position__relative  rounded" src="{{ asset('assets/img/banner/about-me.webp') }}"
+                            <img class="position__relative  rounded" src="{{ asset('assets/img/about-me.webp') }}"
                                 alt="img">
                         </div>
                         <div class="about__experience text-center">
@@ -220,7 +222,7 @@
             <div class="container">
                 <div class="section__heading--topbar d-flex align-items-center justify-content-between mb-50">
                     <div class="section__heading max-width-580">
-                        <span class="section__heading--subtitle text__secondary">EXPERICNCE AND EDUCATION</span>
+                        <span class="section__heading--subtitle text__secondary">EXPERIENCE AND EDUCATION</span>
                         <h2 class="section__heading--title">My Experience and Education</h2>
                     </div>
 
@@ -381,8 +383,7 @@
                 <div class="section__heading--topbar d-flex align-items-center justify-content-between mb-50">
                     <div class="section__heading max-width-580">
                         <span class="section__heading--subtitle text__secondary">PORTFOLIO</span>
-                        <h2 class="section__heading--title">Never compromise for
-                            portfolio quality</h2>
+                        <h2 class="section__heading--title">My Creative Showcase</h2>
                     </div>
 
                 </div>
@@ -391,6 +392,7 @@
                         <div class="swiper-wrapper mb-5">
                             @php
                                 $portfolio = DB::table('portfolio')
+                                    ->limit(10)
                                     ->orderBy('id', 'desc')
                                     ->get();
                             @endphp
@@ -444,7 +446,7 @@
             <div class="container">
                 <div class="section__heading text-center mb-50">
                     <span class="section__heading--subtitle text__secondary">TESTIMONIALS</span>
-                    <h2 class="section__heading--title">We are people say me</h2>
+                    <h2 class="section__heading--title">Words from Happy Clients</h2>
                 </div>
                 <div class="testimonial__inner testimonial__swiper--activation swiper">
                     <div class="swiper-wrapper">
@@ -505,8 +507,8 @@
                                     </div>
                                     <div class="testimonial__author">
                                         <img class="testimonial__author--media"
-                                            src="{{ asset('assets/img/other/testimonial-author-thumb.png') }}"
-                                            alt="img" height="200">
+                                            src="{{ asset('assets/img/testimonial-author-thumb.webp') }}" alt="img"
+                                            height="200">
                                         <h3 class="testimonial__author--title">{{ $single_testi->name }}</h3>
                                     </div>
                                 </div>
@@ -566,7 +568,7 @@
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
                                         <input class="contact__input--field" placeholder="Your email (Optional)"
-                                            name="email" type="text" >
+                                            name="email" type="text">
                                         <p class="form-feedback invalid-feedback" data-name="email"></p>
                                     </div>
                                 </div>
@@ -580,7 +582,7 @@
                                 <div id="submit-btn">
                                     <button class="contact__button primary__btn">Send Request</button>
                                 </div>
-                                
+
                             </form>
                         </div>
                     </div>

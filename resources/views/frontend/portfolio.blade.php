@@ -3,7 +3,7 @@
     <main class="main__content_wrapper">
 
         <div class="bread-crumb">
-            <strong class="bread-crumb-title">Portfolo</strong>
+            <strong class="bread-crumb-title">Portfolio</strong>
         </div>
 
         <section class="portfolio-section">

@@ -97,10 +97,7 @@
 
      <!-- Dark css here -->
      <link rel="stylesheet" href="{{ asset('assets/css/dark.css') }}">
-
-     <!-- Rtl css here -->
-     <link rel="stylesheet" href="{{ asset('assets/css/rtl.css') }}">
-
+ 
      <script>
          // On page load or when changing themes, best to add inline in `head` to avoid FOUC
          if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia(
@@ -146,9 +143,9 @@
                          <h1 class="main__logo--title"><a class="main__logo--link"
                                  href="{{ route('frontend.index') }}">
                                  <img class="main__logo--img logo_light"
-                                     src="{{ asset('assets/img/logo/nav-log.png') }}" alt="logo-img">
+                                     src="{{ asset('assets/img/nav-log.webp') }}" alt="logo-img">
                                  <img class="main__logo--img logo_dark"
-                                     src="{{ asset('assets/img/logo/nav-log-white.png') }}" alt="logo-img">
+                                     src="{{ asset('assets/img/nav-log-white.webp') }}" alt="logo-img">
                              </a></h1>
                      </div>
                      <div class="offcanvas__header--menu__open ">
@@ -212,9 +209,9 @@
          <div class="offcanvas__inner">
              <div class="offcanvas__logo">
                  <a class="offcanvas__logo_link" href="{{ route('frontend.index') }}">
-                     <img src="{{ asset('assets/img/logo/nav-log.png') }}" class="logo-white" alt="Logo-img"
+                     <img src="{{ asset('assets/img/nav-log.webp') }}" class="logo-white" alt="Logo-img"
                          width="158" height="36">
-                     <img src="{{ asset('assets/img/logo/nav-log-white.png') }}" class="logo-dark" alt="Logo-img"
+                     <img src="{{ asset('assets/img/nav-log-white.webp') }}" class="logo-dark" alt="Logo-img"
                          width="158" height="36">
                  </a>
                  <button class="offcanvas__close--btn" data-offcanvas>close</button>
