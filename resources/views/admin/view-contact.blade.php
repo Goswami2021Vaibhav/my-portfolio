@@ -51,7 +51,7 @@
                                                 <button type="button" class="btn btn-danger disabled-btn"
                                                     data-bs-toggle="tooltip" data-bs-placement="auto" data-bs-title="Delete"
                                                     disabled
-                                                    onclick="deleteConfirm('contact-delete-all','blogs', 'false','','')"><i
+                                                    onclick="deleteConfirm('contact-delete-all','contacts', 'false','','')"><i
                                                         class="bx bx-trash"></i>
                                                     <input type="hidden" value="" id="contact-delete-all">
                                                 </button>

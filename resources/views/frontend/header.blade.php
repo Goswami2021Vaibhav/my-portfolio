@@ -57,7 +57,7 @@
      <meta property="site_name" content="Vaibhav Goswami" />
      <meta property="og:site_name" content="Vaibhav Goswami" />
 
-     <meta name="domainType" content=".com" />
+     <meta name="domainType" content=".in" />
      <meta name="Googlebot" content="Index, Follow" />
      <meta name="YahooSeeker" content="INDEX, FOLLOW" />
      <meta name="msnbot" content="INDEX, FOLLOW" />

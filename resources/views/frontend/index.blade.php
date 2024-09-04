@@ -80,7 +80,7 @@
                 <div class="section__heading--topbar d-flex align-items-center justify-content-between mb-50">
                     <div class="section__heading max-width-580">
                         <span class="section__heading--subtitle text__secondary">CREATIVE SERVICE</span>
-                        <h2 class="section__heading--title">What can i do for you</h2>
+                        <h2 class="section__heading--title">How can i help you ?</h2>
                     </div>
 
                 </div>
