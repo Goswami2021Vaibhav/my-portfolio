@@ -1,0 +1,44 @@
+[
+    {
+        "id": "traders-mart",
+        "title": "Traders Mart",
+        "client": "Krishna Biswas",
+        "year": 2026,
+        "type": "ecommerce",
+        "tags": [
+            "Next.js",
+            "MongoDB",
+            "Node.js",
+            "Ecommerce"
+        ],
+        "services": [
+            "ecommerce"
+        ],
+        "thumbnail": "/projects/tradersmart-in.webp",
+        "images": [
+          
+        ],
+        "video": null,
+        "summary": "A modern B2C ecommerce platform with a decoupled architecture — separate storefront, API server, and admin panel.",
+        "description": "Traders Mart is a B2C ecommerce platform built with a clean three-layer architecture. The public storefront delivers a fast, responsive shopping experience. A dedicated API server handles all business logic and data operations. A separate admin panel gives the client full control over products, orders, and inventory — all independently deployable and easy to scale.",
+        "link": {
+            "type": "live",
+            "url": "https://tradersmart.in",
+            "label": "Visit Website"
+        },
+        "featured": true,
+          
+        "techStack": [
+            "Next.js",
+            "Node.js",
+            "Express.js",
+            "React",
+            "MongoDB",
+            "TailwindCSS",
+            "ShadCn",
+            "Cloudflare",
+            "VPS"
+        ],
+        "results": []
+    }
+]

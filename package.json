@@ -1,13 +1,26 @@
 {
-    "private": true,
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build"
-    },
-    "devDependencies": {
-        "axios": "^1.1.2",
-        "laravel-vite-plugin": "^0.7.5",
-        "vite": "^4.0.0"
-    }
+  "name": "vaibhavgoswami.com",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "framer-motion": "^12.38.0",
+    "lucide-react": "^1.12.0",
+    "next": "16.2.4",
+    "react": "19.2.4",
+    "react-countup": "^6.5.3",
+    "react-dom": "19.2.4",
+    "typewriter-effect": "^2.22.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
+    "tailwindcss": "^4"
+  }
 }
