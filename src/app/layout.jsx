@@ -19,12 +19,12 @@ const dmSans = DM_Sans({
 })
 
 export const metadata = {
-  title: 'Vaibhav Goswami — Full Stack Developer & E-commerce Expert', //
+  title: 'Vaibhav Goswami - Full Stack Developer & E-commerce Expert', //
   description: 'Vaibhav Goswami is a Full Stack Developer with 4+ years of experience in PHP, Laravel, MERN, Next.js & Shopify. Building high-converting ecommerce websites and apps.', //
   keywords: 'Full Stack Developer, Shopify Expert, Laravel Developer, MERN Stack, Next.js, Ecommerce Developer, India', //
   authors: [{ name: 'Vaibhav Goswami' }], //
   openGraph: {
-    title: 'Vaibhav Goswami — Full Stack Developer & E-commerce Expert',
+    title: 'Vaibhav Goswami - Full Stack Developer & E-commerce Expert',
     description: 'Building high-converting ecommerce websites and apps.',
     url: 'https://vaibhavgoswami.com',
     siteName: 'Vaibhav Goswami',
@@ -33,7 +33,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vaibhav Goswami — Full Stack Developer & E-commerce Expert',
+    title: 'Vaibhav Goswami - Full Stack Developer & E-commerce Expert',
     description: 'Building high-converting ecommerce websites and apps.',
   },
   robots: {
