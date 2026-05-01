@@ -4,6 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { MessageSquare, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function FinalCTA() {
     const socials = [
@@ -92,9 +93,11 @@ export default function FinalCTA() {
                                     aria-label={social.name}
                                     className="block p-2 hover:scale-110 transition-all duration-300 opacity-70 hover:opacity-100"
                                 >
-                                    <img
+                                    <Image
                                         src={social.icon}
                                         alt={social.name}
+                                        width={56}
+                                        height={56}
                                         className="size-14 object-contain"
                                     />
                                 </a>

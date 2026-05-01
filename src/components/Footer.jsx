@@ -76,7 +76,7 @@ export default function Footer() {
                         className="text-zinc-500 hover:text-accent transition-colors text-sm flex items-center gap-2 group w-fit"
                       >
                         {link.icon && (
-                          <img src={link.icon} alt={link.name} className="w-4 h-4 transition-all" />
+                          <Image src={link.icon} alt={link.name} width={16} height={16} className="w-4 h-4 transition-all" />
                         )}
                         {link.name}
                         <ArrowUpRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />

@@ -132,9 +132,9 @@ export default function TestimonialsPage() {
             <h2 className="text-4xl font-display font-black text-foreground mb-8">
               Become the next <span className="text-accent italic">Success Story.</span>
             </h2>
-            <button className="px-10 py-5 rounded-full bg-accent text-background font-black uppercase tracking-[0.2em] text-xs hover:scale-105 transition-transform shadow-2xl shadow-accent/20">
+            <a href={process.env.NEXT_PUBLIC_WHATSAPP_LINK} target='_blank' className="px-10 py-5 rounded-full bg-accent text-background font-black uppercase tracking-[0.2em] text-xs hover:scale-105 transition-transform shadow-2xl shadow-accent/20">
                Start Your Project
-             </button>
+             </a>
         </section>
       </div>
     </main>
