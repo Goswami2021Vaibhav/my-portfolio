@@ -294,7 +294,7 @@ export default function ProjectModal({ project, onClose }) {
                                             />
 
 
- 
+
 
 
                                             {/* Prev / Next */}
@@ -386,35 +386,19 @@ export default function ProjectModal({ project, onClose }) {
                                             {project.title}
                                         </h2>
 
-                                        {(project.link.type === 'live' || project.link.type === 'store') && (
+                                        {project?.link && (
                                             <a
-                                                href={project.link.url}
+                                                href={project.link}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold flex-shrink-0 transition-all hover:opacity-90"
                                                 style={{ background: '#F59E0B', color: '#0A0A0A' }}
                                             >
-                                                {project.link.type === 'store'
-                                                    ? <Store size={15} />
-                                                    : <ExternalLink size={15} />
-                                                }
-                                                {project.link.label}
+                                                <ExternalLink size={15} />
+                                                View Project
                                             </a>
                                         )}
 
-                                        {(project.link.type === 'protected') && (
-                                            <div
-                                                className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold flex-shrink-0"
-                                                style={{
-                                                    background: '#1A1A1A',
-                                                    border: '1px solid #222222',
-                                                    color: '#A1A1AA',
-                                                }}
-                                            >
-                                                <Lock size={14} />
-                                                {project.link.label}
-                                            </div>
-                                        )}
                                     </div>
 
                                     {/* Meta Row */}

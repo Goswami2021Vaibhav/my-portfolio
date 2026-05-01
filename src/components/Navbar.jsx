@@ -5,14 +5,40 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, MessageCircle } from 'lucide-react'
-
+import {
+  Home,
+  Briefcase,
+  Wrench,
+  Users,
+  Mail,
+  MessageCircle,
+  X,
+  ArrowRight
+} from 'lucide-react'
 const navLinks = [
-  { label: 'My Work', href: '/work' },
-  { label: 'Services', href: '/services' },
-  { label: 'Testimonials', href: '/testimonials' },
-  { label: 'Contact', href: '/contact' },
-  // { label: 'Blog', href: '/blog' },
+  { label: 'Home', href: '/', icon: Home },
+  { label: 'My Work', href: '/work', icon: Briefcase },
+  { label: 'Services', href: '/services', icon: Wrench },
+  { label: 'Testimonials', href: '/testimonials', icon: Users },
+  { label: 'Contact', href: '/contact', icon: Mail },
+]
+
+const socialLinks = [
+  {
+    name: 'LinkedIn',
+    href: process.env.NEXT_PUBLIC_LINKEDIN_LINK,
+    icon: '/linkedin.svg'
+  },
+  {
+    name: 'WhatsApp',
+    href: process.env.NEXT_PUBLIC_WHATSAPP_LINK,
+    icon: '/whatsapp.svg'
+  },
+  {
+    name: 'Instagram',
+    href: process.env.NEXT_PUBLIC_INSTAGRAM_LINK,
+    icon: '/instagram.svg'
+  }
 ]
 
 export default function Navbar() {
@@ -56,7 +82,7 @@ export default function Navbar() {
                 alt="Vaibhav Goswami"
                 fill
                 priority
-                className="object-cover"
+                className="object-cover scale-110"
                 sizes='56px'
               />
             </div>
@@ -71,18 +97,22 @@ export default function Navbar() {
             </div>
           </Link>
 
+
           {/* Desktop Nav Links */}
-          <ul className="hidden md:flex items-center gap-1 bg-surface/20 border border-white/5 p-1 rounded-full backdrop-blur-md">
+          <ul className="hidden lg:flex items-center gap-1 bg-surface/20 border border-white/5 p-1.5 rounded-full backdrop-blur-md shadow-2xl">
             {navLinks.map((link) => {
               const isActive = pathname === link.href
+              const Icon = link.icon
               return (
                 <li key={link.href} className="relative">
                   <Link
                     href={link.href}
-                    className={`px-5 py-2 rounded-full text-sm font-medium transition-colors relative z-10 ${isActive ? 'text-background' : 'text-muted hover:text-foreground'
+                    className={`px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-all relative z-10 flex items-center gap-2 ${isActive ? 'text-background' : 'text-zinc-400 hover:text-foreground'
                       }`}
                   >
-                    {link.label}
+                    <Icon size={14} strokeWidth={isActive ? 3 : 2} />
+                    <span>{link.label}</span>
+
                     {isActive && (
                       <motion.span
                         layoutId="nav-pill"
@@ -161,22 +191,28 @@ export default function Navbar() {
             </button>
 
             {/* Nav Links */}
-            <ul className="space-y-6 mt-10">
+
+            <ul className="space-y-4 mt-10">
               {navLinks.map((link, i) => {
                 const isActive = pathname === link.href
+                const Icon = link.icon
                 return (
                   <motion.li
                     key={link.href}
                     initial={{ x: -20, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
-                    transition={{ delay: i * 0.08 }}
+                    transition={{ delay: i * 0.05 }}
                   >
                     <Link
                       href={link.href}
                       onClick={() => setMobileOpen(false)}
-                      className={`text-3xl font-black uppercase font-display transition-colors ${isActive ? 'text-accent' : 'text-foreground hover:text-accent'
+                      className={`text-3xl font-black uppercase font-display flex items-center gap-4 transition-colors ${isActive ? 'text-accent' : 'text-foreground hover:text-accent'
                         }`}
                     >
+                      <div className={`p-2 rounded-xl border ${isActive ? 'bg-accent/10 border-accent/20' : 'bg-surface border-white/5'
+                        }`}>
+                        <Icon size={25} />
+                      </div>
                       {link.label}
                     </Link>
                   </motion.li>
@@ -189,19 +225,49 @@ export default function Navbar() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="mt-12 pt-8 border-t border-border"
+              className="mt-auto pt-8 border-t border-white/5"
             >
-              <p className="text-muted text-xs mb-4 uppercase tracking-widest font-body">
-                Available for projects
+              <p className="text-zinc-500 text-[10px] mb-6 uppercase tracking-[0.3em] font-black">
+                Connect & Collaborate
               </p>
+
+              <div className="flex items-center gap-8 mb-10">
+                {socialLinks.map((social, i) => (
+                  <motion.a
+                    key={social.name}
+                    initial={{ scale: 0, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 0.7 }}
+                    transition={{ delay: 0.5 + (i * 0.1) }}
+                    whileHover={{ opacity: 1, scale: 1.1 }}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <Image
+                      src={social.icon}
+                      alt={social.name}
+                      width={32}
+                      height={32}
+                      className="size-8 object-contain transition-all"
+                    />
+                  </motion.a>
+                ))}
+              </div>
+
               <a
                 href={process.env.NEXT_PUBLIC_WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileOpen(false)}
-                className="text-xl font-bold text-accent underline underline-offset-8 font-display uppercase tracking-tighter"
+                className="group flex items-center justify-between w-full px-6 py-2 bg-accent rounded-[2rem] text-background transition-transform active:scale-95"
               >
-                Start a Conversation →
+                <span className="text-xl font-black uppercase font-display tracking-tight">
+                  Start a Project
+                </span>
+                <div className="bg-background/20 p-2 rounded-full">
+                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                </div>
               </a>
             </motion.div>
 

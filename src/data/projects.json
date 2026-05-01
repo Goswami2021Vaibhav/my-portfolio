@@ -1,5 +1,51 @@
 [
     {
+        "id": "ksms-school-erp",
+        "title": "KSMS School ERP",
+        "client": "Kumar Sanu",
+        "year": 2026,
+        "type": "software",
+        "tags": [
+            "ERP",
+            "School Management",
+            "MERN",
+            "Dashboard",
+            "Multi-role"
+        ],
+        "services": [
+            "School ERP & Website"
+        ],
+        "thumbnail": "/projects/thumbnail-ksms-school-erp.webp",
+        "images": [
+            "/projects/ksms-school-erp-img-1.webp",
+            "/projects/ksms-school-erp-img-2.webp",
+            "/projects/ksms-school-erp-img-3.webp",
+            "/projects/ksms-school-erp-img-4.webp",
+            "/projects/ksms-school-erp-img-5.webp"
+        ],
+        "video": null,
+        "summary": "A full-featured School ERP system with role-based access for admins, teachers, students, and parents — streamlining academics, attendance, fees, and communication.",
+        "description": "KSMS School ERP is a comprehensive school management platform built on the MERN stack. It provides role-based dashboards for administrators, teachers, students, and parents — each with tailored access and functionality. The system covers the full school workflow: student admissions and profiles, class and section management, attendance tracking, exam scheduling and result management, fee collection with payment history, timetable generation, and internal notices. A dedicated school website is also included, giving the institution a professional public presence. The platform is hosted on a VPS for full control, reliability, and data privacy.",
+        "link": null,
+        "featured": true,
+        "techStack": [
+            "React",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "TailwindCSS",
+            "ShadCn",
+            "VPS"
+        ],
+        "results": [
+            "Reduced manual administrative work by automating attendance, fee tracking, and report generation",
+            "Enabled real-time parent-teacher communication through integrated notice and messaging system",
+            "Centralized student data across admissions, academics, and finance in a single platform",
+            "Delivered role-specific dashboards for 4 user types: admin, teacher, student, and parent",
+            "Improved fee collection efficiency with digital payment tracking and receipt generation"
+        ]
+    },
+    {
         "id": "traders-mart",
         "title": "Traders Mart",
         "client": "Krishna Biswas",
@@ -15,19 +61,12 @@
             "ecommerce"
         ],
         "thumbnail": "/projects/tradersmart-in.webp",
-        "images": [
-          
-        ],
+        "images": [],
         "video": null,
         "summary": "A modern B2C ecommerce platform with a decoupled architecture — separate storefront, API server, and admin panel.",
         "description": "Traders Mart is a B2C ecommerce platform built with a clean three-layer architecture. The public storefront delivers a fast, responsive shopping experience. A dedicated API server handles all business logic and data operations. A separate admin panel gives the client full control over products, orders, and inventory — all independently deployable and easy to scale.",
-        "link": {
-            "type": "live",
-            "url": "https://tradersmart.in",
-            "label": "Visit Website"
-        },
+        "link": "https://tradersmart.in",
         "featured": true,
-          
         "techStack": [
             "Next.js",
             "Node.js",
@@ -40,5 +79,47 @@
             "VPS"
         ],
         "results": []
+    },
+    {
+        "id": "expertsofdeals",
+        "title": "Expertsofdeals",
+        "client": "Siddharth Bhagat",
+        "year": 2025,
+        "type": "website",
+        "tags": [
+            "B2B",
+            "Marketplace",
+            "Next.js",
+            "MERN",
+            "Supplier Portal",
+            "Buyer Portal"
+        ],
+        "services": [
+            "Website Development",
+            "Hosting"
+        ],
+        "thumbnail": "/projects/exod-thumbnail.webp",
+        "images": [],
+        "video": null,
+        "summary": "A B2B marketplace platform connecting global suppliers and buyers — enabling seamless product discovery, verified business listings, and direct trade inquiries worldwide.",
+        "description": "Expertsofdeals is a B2B trade platform designed to bridge the gap between suppliers and buyers across the globe. Businesses can create verified company profiles, list their products or services, and receive direct inquiries from potential buyers. The platform features smart search and filtering to help buyers find the right suppliers by category, location, and product type. Suppliers get a dedicated dashboard to manage their listings, track leads, and respond to inquiries efficiently. Built on the MERN stack with Next.js for a fast, SEO-optimized public-facing experience, the platform is structured to scale as new industries and regions are onboarded.",
+        "link": "https://expertsofdeals.com",
+        "featured": true,
+        "techStack": [
+            "Next.js",
+            "React",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "MUI",
+            "TailwindCSS"
+        ],
+        "results": [
+            "Built a scalable supplier-buyer marketplace supporting multi-category product listings",
+            "Implemented verified business profiles to build trust across global trade connections",
+            "Delivered SEO-optimized public pages to drive organic traffic from international buyers",
+            "Enabled direct inquiry system allowing buyers to contact suppliers without intermediaries",
+            "Integrated smart search and category filtering to improve product discovery experience"
+        ]
     }
 ]

@@ -127,7 +127,7 @@ export default function ServicesBento() {
         <motion.span className="text-accent font-display font-bold tracking-widest uppercase text-xs mb-4">
           My Services
         </motion.span>
-        <h2 className="text-4xl md:text-6xl font-display font-bold text-foreground max-w-3xl">
+        <h2 className="text-3xl md:text-6xl font-display font-bold text-foreground max-w-3xl">
           Complete Digital <span className="text-accent">Solution</span>
         </h2>
       </div>

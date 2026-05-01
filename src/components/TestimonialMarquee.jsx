@@ -47,7 +47,7 @@ export default function TestimonialMarquee() {
         <motion.span className="text-accent font-bold tracking-widest uppercase text-xs mb-4 block">
           Social Proof
         </motion.span>
-        <h2 className="text-4xl md:text-6xl font-display font-bold text-foreground">
+        <h2 className="text-3xl md:text-6xl font-display font-bold text-foreground">
           What My <span className="text-accent">Clients</span> Say
         </h2>
       </div>

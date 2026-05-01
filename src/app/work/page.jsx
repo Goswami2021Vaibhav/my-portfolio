@@ -125,9 +125,9 @@ export default function WorkPage() {
                   </div>
 
                   {/* Link Button — conditional on link.type */}
-                  {project.link.type === 'live' || project.link.type === 'store' ? (
+                  {project?.link && (
                     <a
-                      href={project.link.url}
+                      href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={e => e.stopPropagation()}
@@ -135,11 +135,7 @@ export default function WorkPage() {
                     >
                       <ExternalLink size={20} strokeWidth={3} />
                     </a>
-                  ) : project.link.type === 'protected'  ? (
-                    <div className="md:size-14 size-10 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center flex-shrink-0">
-                      <Lock size={18} className="text-zinc-500" />
-                    </div>
-                  ) : null}
+                  )}
                 </div>
 
                 {/* Tags */}
@@ -160,8 +156,7 @@ export default function WorkPage() {
         </div>
 
       </div>
-
-      {/* Modal will go here */}
+ 
       <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
     </main>
   )

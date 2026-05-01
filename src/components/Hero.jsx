@@ -65,7 +65,7 @@ export default function Hero() {
                         <motion.h1
                             variants={fadeUp} initial="hidden" animate="show" custom={1}
                             className="font-display font-extrabold leading-[1.1] tracking-tight text-foreground mb-5"
-                            style={{ fontSize: 'clamp(2.4rem, 5vw, 3.8rem)' }}
+                            style={{ fontSize: 'clamp(1.8rem, 5vw, 3.8rem)' }}
                         >
                             Full Stack Developer <br />
                             {/* Prevents shifting by using fixed height and nowrap */}
@@ -95,7 +95,7 @@ export default function Hero() {
                             <span className="text-foreground"> scalable e-commerce</span> platforms that drive growth.
                         </motion.p>
 
-                        <motion.div variants={fadeUp} initial="hidden" animate="show" custom={3} className="flex flex-wrap gap-4 mb-12">
+                        <motion.div variants={fadeUp} initial="hidden" animate="show" custom={3} className="flex flex-wrap md:justify-start justify-center gap-4 mb-12">
                             <Link href="/work" className="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-background font-body font-bold text-sm md:px-8 md:py-4 px-6 py-3 rounded-full transition-all hover:scale-105 active:scale-95 shadow-lg shadow-accent/20">
                                 View My Work <ArrowRight size={18} />
                             </Link>
@@ -108,9 +108,11 @@ export default function Hero() {
                         <motion.div variants={fadeUp} initial="hidden" animate="show" custom={4}
                             className="grid md:grid-cols-4 grid-cols-2 pt-8 border-t border-border gap-10">
                             {stats.map((stat, i) => (
-                                <div key={i} className="flex flex-col">
-                                    <div className="font-display font-black text-3xl text-accent">{stat.value}</div>
-                                    <div className="font-body text-muted text-[10px] uppercase tracking-widest mt-1">{stat.label}</div>
+                                <div key={i} className="flex md:justify-start justify-center">
+                                    <div>
+                                        <div className="font-display font-black text-3xl text-accent md:text-start text-center">{stat.value}</div>
+                                        <div className="font-body text-muted text-[10px] uppercase tracking-widest mt-1 md:text-start text-center">{stat.label}</div>
+                                    </div>
                                 </div>
                             ))}
                         </motion.div>
@@ -126,21 +128,21 @@ export default function Hero() {
                     >
                         <div className="relative group">
                             {/* Card - 350x400 */}
-                            <div className="relative w-[350px] h-[400px] rounded-[48px] bg-surface/40 backdrop-blur-md border border-border/50 overflow-hidden flex flex-col items-center justify-center p-10 transition-all group-hover:border-accent/40 shadow-2xl">
+                            <div className="relative md:w-[400px] md:h-[450px] w-[350px] h-[400px] rounded-[48px] bg-surface/40 backdrop-blur-md border border-border/50 overflow-hidden flex flex-col items-center justify-center p-10 transition-all group-hover:border-accent/40 shadow-2xl">
 
                                 <div className="absolute top-0 right-0 w-24 h-24 bg-accent/10 rounded-bl-[100px]" />
                                 <div className="absolute bottom-0 left-0 w-20 h-20 bg-accent/5 rounded-tr-[80px]" />
 
                                 {/* Main Avatar */}
-                                <div className="relative w-40 h-40 mb-8">
+                                <div className="relative md:w-48 md:h-48 w-32 h-32 mb-8">
                                     <div className="absolute inset-0 bg-accent rounded-full animate-pulse opacity-20 scale-110" />
                                     <div className="relative w-full h-full rounded-full border-4 border-accent overflow-hidden bg-background shadow-inner">
                                         <Image
                                             src="/vaibhav-goswami.webp"
                                             alt="Vaibhav Goswami"
-                                            width={160}
-                                            height={160}
-                                            className="object-cover"
+                                            width={200}
+                                            height={200}
+                                            className="object-cover scale-110"
                                         />
                                     </div>
                                 </div>

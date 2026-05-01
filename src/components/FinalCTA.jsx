@@ -44,7 +44,7 @@ export default function FinalCTA() {
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        className="text-4xl md:text-7xl font-display font-bold text-foreground mb-8 tracking-tight"
+                        className="text-3xl md:text-7xl font-display font-bold text-foreground mb-8 tracking-tight"
                     >
                         Have an idea? Let's <br />
                         <span className="text-accent italic text-glow">build the future.</span>

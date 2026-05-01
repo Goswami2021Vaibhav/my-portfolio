@@ -12,7 +12,7 @@ export default function Home() {
       <WorkPreview />
       <ServicesSection />
       <TestimonialMarquee />
-      <BlogSection/>
+      {/* <BlogSection/> */}
       <FinalCTA/>
     </main>
   )

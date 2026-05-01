@@ -39,7 +39,7 @@ export default function BlogSection() {
           <motion.span className="text-accent font-bold tracking-widest uppercase text-xs mb-4 block">
             Insights
           </motion.span>
-          <h2 className="text-4xl md:text-6xl font-display font-bold text-foreground">
+          <h2 className="text-3xl md:text-6xl font-display font-bold text-foreground">
             Latest from the <span className="text-accent">Dev Log</span>
           </h2>
         </div>
