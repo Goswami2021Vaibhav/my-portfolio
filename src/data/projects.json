@@ -121,5 +121,71 @@
             "Enabled direct inquiry system allowing buyers to contact suppliers without intermediaries",
             "Integrated smart search and category filtering to improve product discovery experience"
         ]
+    },
+    {
+        "id": "ksms-lucknow",
+        "title": "KSMS Lucknow",
+        "client": "Kumar Sanu",
+        "year": 2026,
+        "type": "website",
+        "tags": [
+            "School Website",
+            "NextJs",
+            "Responsive",
+            "SEO"
+        ],
+        "services": [
+            "Website"
+        ],
+        "thumbnail": "/projects/ksmslucknow-thumbnail.webp",
+        "images": [],
+        "video": null,
+        "summary": "A professional school website for KSMS Lucknow — showcasing academics, admissions, faculty, and school activities with a clean and modern design.",
+        "description": "KSMS Lucknow's website serves as the digital face of the institution. It presents essential information for parents and students — including academic programs, admission procedures, faculty profiles, school events, and contact details. Built with performance and SEO in mind, the site ensures the school ranks well in local searches and delivers a smooth browsing experience across all devices. The clean layout and intuitive navigation reflect the school's commitment to professionalism and accessibility.",
+        "link": null,
+        "featured": false,
+        "techStack": [
+            "Next.js",
+            "TailwindCSS"
+        ],
+        "results": [
+            "Delivered a fully responsive school website accessible across all devices and screen sizes",
+            "Improved school's online presence with SEO-optimized pages for local search visibility",
+            "Structured clear navigation for academics, admissions, faculty, and contact information",
+            "Reduced parent inquiries by providing all essential school information in one place"
+        ]
+    },
+    {
+        "id": "vindhya-academy",
+        "title": "Vindhya Academy",
+        "client": "Balendra Mishra",
+        "year": 2025,
+        "type": "website",
+        "tags": [
+            "School Website",
+            "NextJs",
+            "Responsive",
+            "SEO"
+        ],
+        "services": [
+            "Website"
+        ],
+        "thumbnail": "/projects/vindhyaacademy-thumbnail.webp",
+        "images": [],
+        "video": null,
+        "summary": "A modern, responsive website for Vindhya Academy — built to establish a strong digital presence and help parents and students easily access school information.",
+        "description": "Vindhya Academy's website was designed to give the institution a credible and professional online identity. The site highlights the school's vision, academic offerings, admission process, and key achievements. Built with Next.js and TailwindCSS, it loads fast and ranks well on search engines. Parents can quickly find information about fee structure, school timings, faculty, and how to get in touch — all presented through a clean, easy-to-navigate interface optimized for both desktop and mobile users.",
+        "link": null,
+        "featured": false,
+        "techStack": [
+            "Next.js",
+            "TailwindCSS"
+        ],
+        "results": [
+            "Established a strong digital identity for the school with a professional and modern design",
+            "Optimized for local SEO to help parents discover the school through search engines",
+            "Provided a mobile-first experience ensuring smooth access on smartphones and tablets",
+            "Organized key information — admissions, faculty, academics — into a clear and accessible layout"
+        ]
     }
 ]
