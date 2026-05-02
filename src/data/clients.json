@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "zara-fashion-store",
+    "clientName": "Priya",
+    "companyName": "Zara Collective",
+    "industry": "Fashion & Apparel",
+    "painPoint": "Your current Shopify theme is slowing you down — literally. A 6-second mobile load time is costing you customers before they even see your products.",
+    "recommendedPackage": "Shopify",
+    "whyThisPackage": "You need speed, a strong mobile experience, and the ability to launch new collections fast — Shopify with a custom theme is the right call, not a heavyweight custom build.",
+    "techStack": ["Shopify", "Liquid", "Klaviyo", "Razorpay", "TailwindCSS", "Alpine.js"],
+    "features": [
+      "Custom Shopify theme built from scratch — zero pre-built templates",
+      "Mobile-first product pages optimised for your fashion catalogue",
+      "Core Web Vitals score above 90 — fast load, smooth scroll",
+      "Collection filtering and size-based search tailored to apparel",
+      "Klaviyo integration for abandoned cart and post-purchase flows",
+      "SEO-ready structure so your collections rank on Google"
+    ],
+    "excluded": [
+      "Custom admin dashboard — Shopify's native dashboard handles everything you need right now.",
+      "Mobile app — your web store will perform like one already."
+    ],
+    "deliverables": [
+      "A speed-optimised homepage that showcases your latest collection",
+      "Mobile-first product pages built for your apparel catalogue",
+      "Integrated checkout with Razorpay and COD support",
+      "A collection landing page system you can manage without a developer"
+    ],
+    "projects": [
+      {
+        "name": "Aura Skincare",
+        "summary": "Custom Shopify store with filterable collections, Klaviyo email flows, and a 94 Lighthouse score. Conversion rate improved 2.4x within 60 days of launch.",
+        "link": "https://auraskincare.in"
+      },
+      {
+        "name": "Drape & Co.",
+        "summary": "D2C fashion brand migrated from a template store to a fully custom Shopify theme. Mobile load time dropped from 7s to under 1.8s.",
+        "link": "https://drapeandco.in"
+      }
+    ],
+    "timeline": {
+      "steps": [
+        {
+          "title": "Strategy & Planning",
+          "duration": "Week 1",
+          "description": "Finalise sitemap, platform decisions, and design direction together. You'll have a clear project brief signed off by Day 5."
+        },
+        {
+          "title": "UI/UX Design",
+          "duration": "Week 1–2",
+          "description": "Wireframes and high-fidelity mockups reviewed and approved by you. No development starts until you're happy with the design."
+        },
+        {
+          "title": "Development",
+          "duration": "Week 2–4",
+          "description": "Full Shopify build with custom theme, all integrations wired up, and performance optimisation baked in from the start."
+        },
+        {
+          "title": "QA & Revisions",
+          "duration": "Week 4",
+          "description": "Cross-device and cross-browser testing, your feedback round, and final polish before we go live."
+        },
+        {
+          "title": "Launch & Handoff 🚀",
+          "duration": "End of Week 4",
+          "description": "Go live with full documentation, a handoff call, and 30 days of post-launch monitoring and support included."
+        }
+      ]
+    },
+    "stats": [
+      { "value": "50+", "label": "Stores launched" },
+      { "value": "3–4 wks", "label": "Avg. delivery" },
+      { "value": "100%", "label": "Custom code" },
+      { "value": "30 days", "label": "Post-launch support" },
+      { "value": "98%", "label": "On-time delivery" },
+      { "value": "2.4×", "label": "Avg. conversion lift" }
+    ],
+    "faq": [
+      {
+        "question": "How do revisions work?",
+        "answer": "You get two rounds of revisions at the design stage and one round during development. Anything beyond that scope is billed separately at a flat hourly rate we agree on upfront — no surprises."
+      },
+      {
+        "question": "What if I need changes after launch?",
+        "answer": "The first 30 days post-launch are fully covered — bug fixes and minor tweaks are included. Larger feature additions or redesigns are scoped and quoted separately."
+      },
+      {
+        "question": "Do I own the code after the project?",
+        "answer": "100%. Once the final payment is made, you own everything — the theme code, assets, and any custom integrations. No licensing fees, no lock-in."
+      },
+      {
+        "question": "Can you work with my existing Shopify store?",
+        "answer": "Yes — I can redesign and rebuild on top of your existing store, preserving your products, orders, and customer data. Or we migrate cleanly to a fresh setup. We'll decide together on the discovery call."
+      }
+    ],
+    "personalNote": "Priya, after our conversation last week, it's clear you've built something real with Zara Collective — the product quality is there. What's holding you back is infrastructure, not product. The store experience doesn't match the brand you've created. That's exactly the gap we fix. This proposal is built specifically around your goals, your timeline, and your customers.",
+    "quotedPrice": "₹55,000",
+    "paymentStructure": "₹27,500 to begin · ₹27,500 on launch",
+    "proposalExpiry": "May 15, 2025"
+  }
+]
