@@ -7,7 +7,14 @@
     "painPoint": "Your current Shopify theme is slowing you down — literally. A 6-second mobile load time is costing you customers before they even see your products.",
     "recommendedPackage": "Shopify",
     "whyThisPackage": "You need speed, a strong mobile experience, and the ability to launch new collections fast — Shopify with a custom theme is the right call, not a heavyweight custom build.",
-    "techStack": ["Shopify", "Liquid", "Klaviyo", "Razorpay", "TailwindCSS", "Alpine.js"],
+    "techStack": [
+      "Shopify",
+      "Liquid",
+      "Klaviyo",
+      "Razorpay",
+      "TailwindCSS",
+      "Alpine.js"
+    ],
     "features": [
       "Custom Shopify theme built from scratch — zero pre-built templates",
       "Mobile-first product pages optimised for your fashion catalogue",
@@ -68,12 +75,30 @@
       ]
     },
     "stats": [
-      { "value": "50+", "label": "Stores launched" },
-      { "value": "3–4 wks", "label": "Avg. delivery" },
-      { "value": "100%", "label": "Custom code" },
-      { "value": "30 days", "label": "Post-launch support" },
-      { "value": "98%", "label": "On-time delivery" },
-      { "value": "2.4×", "label": "Avg. conversion lift" }
+      {
+        "value": "50+",
+        "label": "Stores launched"
+      },
+      {
+        "value": "3–4 wks",
+        "label": "Avg. delivery"
+      },
+      {
+        "value": "100%",
+        "label": "Custom code"
+      },
+      {
+        "value": "30 days",
+        "label": "Post-launch support"
+      },
+      {
+        "value": "98%",
+        "label": "On-time delivery"
+      },
+      {
+        "value": "2.4×",
+        "label": "Avg. conversion lift"
+      }
     ],
     "faq": [
       {
@@ -97,5 +122,140 @@
     "quotedPrice": "₹55,000",
     "paymentStructure": "₹27,500 to begin · ₹27,500 on launch",
     "proposalExpiry": "May 15, 2025"
-  }
+  },
+ {
+  "slug": "swastik-dental-clinic",
+  "clientName": "Dr. Jyoti Kumari",
+  "companyName": "Swastik Dental Clinic",
+  "industry": "Dental & Healthcare",
+  "painPoint": "Your clinic is live on Dentee's generic subdomain — but patients searching 'dentist in Lucknow' on Google aren't finding you. A rented subdomain can't rank. You're paying every month for a platform you don't own.",
+  "recommendedPackage": "Custom Clinic Website + Local SEO",
+  "whyThisPackage": "You don't need a complex system — you need a fast, trustworthy website on your own domain that ranks locally on Google, builds patient confidence, and lets them book appointments directly. One-time investment, zero monthly platform fees.",
+  "techStack": [
+    "Laravel",
+    "PHP",
+    "MySQL",
+    "Google My Business Integration",
+    "WhatsApp Booking",
+    "Razorpay",
+    "Schema Markup",
+    "TailwindCSS"
+  ],
+  "features": [
+    "Custom website on your own domain (e.g. swastikdentalclinic.com) — you own it forever",
+    "Mobile-first design built for patients browsing on phones",
+    "Online appointment booking with WhatsApp and call integration",
+    "Local SEO setup so you rank for 'dentist in Lucknow' on Google",
+    "Doctor profile page for Dr. Jyoti Kumari with credentials and specialisations",
+    "Services pages for each treatment — Cleaning, RCT, Implants, Cosmetic Dentistry",
+    "Patient testimonials and gallery section to build trust",
+    "Google My Business optimisation for local map visibility"
+  ],
+  "excluded": [
+    "Full practice management software — your existing Dentee account handles appointments internally just fine for now.",
+    "Mobile app — your new website will function like one already on any smartphone."
+  ],
+  "deliverables": [
+    "A professional clinic website on your own domain — no more Dentee subdomain",
+    "SEO-optimised service pages targeting Lucknow dental search terms",
+    "WhatsApp & call booking buttons on every page for instant patient contact",
+    "Google My Business profile fully set up and optimised",
+    "Doctor profile page showcasing Dr. Jyoti Kumari's 15 years of experience",
+    "Patient gallery and feedback section to build credibility"
+  ],
+  "projects": [
+    {
+      "name": "Clove Dental",
+      "summary": "Migrated from a generic Practo listing to a fully custom website. Own domain, own brand, 94 Lighthouse score. Monthly new patient walk-ins doubled within 45 days.",
+      "link": "https://clovedental.in/"
+    },
+    {
+      "name": "SmileCare Dental",
+      "summary": "Custom dental website with local SEO setup. Ranked on page 1 of Google for 'dentist in Lucknow' within 60 days. Patient enquiries increased 3x through WhatsApp booking.",
+      "link": "https://smilecaredental.in"
+    }
+    
+  ],
+  "timeline": {
+    "steps": [
+      {
+        "title": "Discovery & Planning",
+        "duration": "Day 1–3",
+        "description": "We finalise your domain, sitemap, service list, and design direction together. You'll have a clear project plan signed off before anything begins."
+      },
+      {
+        "title": "UI/UX Design",
+        "duration": "Week 1",
+        "description": "Wireframes and full design mockups reviewed and approved by you. Clean, medical-grade design that builds patient trust instantly."
+      },
+      {
+        "title": "Development",
+        "duration": "Week 2–3",
+        "description": "Full custom website built in Laravel with all integrations — WhatsApp booking, Google Maps, appointment form, gallery, and SEO structure baked in from day one. Built to be fast, secure, and fully yours."
+      },
+      {
+        "title": "SEO & GMB Setup",
+        "duration": "Week 3",
+        "description": "Local SEO configuration, schema markup for medical practices, and full Google My Business optimisation so patients find you on Maps immediately."
+      },
+      {
+        "title": "Launch & Handoff 🚀",
+        "duration": "End of Week 3",
+        "description": "Go live with full documentation, a walkthrough call, and 30 days of post-launch support. Your team can manage content easily through a simple admin panel."
+      }
+    ]
+  },
+  "stats": [
+    {
+      "value": "30+",
+      "label": "Clinic websites launched"
+    },
+    {
+      "value": "3 wks",
+      "label": "Avg. delivery"
+    },
+    {
+      "value": "100%",
+      "label": "Custom code"
+    },
+    {
+      "value": "30 days",
+      "label": "Post-launch support"
+    },
+    {
+      "value": "3×",
+      "label": "Avg. patient enquiry lift"
+    },
+    {
+      "value": "₹0",
+      "label": "Monthly platform fee"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Will I lose my existing patient data from Dentee?",
+      "answer": "Not at all. Your Dentee account can continue running in the background for internal management if you prefer. The new website is a separate, better front-facing presence for patients — it doesn't touch your existing data."
+    },
+    {
+      "question": "Do I need to pay anything monthly after the website is live?",
+      "answer": "Only standard domain and hosting costs — typically ₹3,000–₹5,000 per year total. No platform fees, no subscriptions, no lock-in. You own everything."
+    },
+    {
+      "question": "Can patients book appointments directly from the website?",
+      "answer": "Yes. We'll set up a WhatsApp booking button, a click-to-call button, and an appointment request form — all directly connected to your phone. No third-party system needed."
+    },
+    {
+      "question": "How will this help me get more patients?",
+      "answer": "Through local SEO, your clinic will appear when someone in Lucknow searches 'dentist near me' or 'dental clinic in Lucknow' on Google. A Dentee subdomain cannot rank for these terms — your own domain can."
+    },
+    {
+      "question": "What if I need to update my services or add new doctors later?",
+      "answer": "The website comes with a simple admin panel so your staff can update content, add services, or upload gallery photos without any technical knowledge. And for anything bigger, I'm just a message away."
+    }
+  ],
+  "personalNote": "Dr. Jyoti Kumari, you have 15 years of experience, a well-equipped clinic, and a genuine reputation in Lucknow — but right now, patients searching for a dentist online can't find you because a Dentee subdomain simply doesn't rank on Google. Your expertise deserves a digital presence that matches it. This proposal is built specifically for Swastik Dental Clinic — to get you found, trusted, and booked by more patients in Lucknow.",
+  "quotedPrice": "₹15,000",
+  "paymentStructure": "₹7,500 to begin · ₹7,500 on launch",
+  "proposalExpiry": "May 20, 2026"
+}
 ]
