@@ -20,9 +20,9 @@ const BrandIcons = {
 const contactChannels = [
     {
         title: "Email Me",
-        value: "contact@vaibhavgoswami.com",
+        value: "vaibhavgoswami.dev@gmail.com",
         icon: <Mail className="text-accent" size={28} />,
-        href: "mailto:contact@vaibhavgoswami.com",
+        href: "mailto:vaibhavgoswami.dev@gmail.com",
         tag: "Primary"
     },
     {
