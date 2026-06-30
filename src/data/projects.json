@@ -1,19 +1,52 @@
 [
     {
+        "id": "expertsofdeals",
+        "title": "Expertsofdeals",
+        "year": 2025,
+        "type": "B2B Marketplace",
+        "tags": [
+            "Next.js",
+            "MERN",
+            "REST APIs",
+            "Redux",
+            "Admin Dashboard"
+        ],
+        "thumbnail": "/projects/exod-thumbnail.webp",
+        "images": [],
+        "video": null,
+        "summary": "B2B marketplace connecting 4,000+ buyers and 2,000+ suppliers. Built and maintained 15+ REST APIs and a 20+ module admin dashboard.",
+        "description": "Expertsofdeals is a live B2B marketplace platform at my current role. I own the backend API layer — 15+ REST endpoints built with Node.js and Express serving real marketplace operations across supplier onboarding, buyer inquiries, product listings, and order flows. On the frontend, I built the admin dashboard with React, Next.js, and Redux — covering 20+ operational modules including analytics, listing management, user verification, and inquiry tracking. The platform runs on a self-managed Linux VPS via Dokploy with 99%+ uptime. It currently serves 4,000+ registered buyers and 2,000+ suppliers across multiple product categories.",
+        "link": "https://expertsofdeals.com",
+        "featured": true,
+        "techStack": [
+            "Next.js",
+            "React",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Redux",
+            "TailwindCSS",
+            "VPS / Dokploy"
+        ],
+        "results": [
+            "Built and maintained 15+ REST APIs serving 4,000+ buyers and 2,000+ suppliers",
+            "Developed a 20+ module admin dashboard for analytics and marketplace operations",
+            "Maintained 99%+ uptime on self-managed Linux VPS using Dokploy",
+            "Implemented supplier verification flow and buyer inquiry system end-to-end",
+            "Optimized public-facing pages with Next.js SSR for SEO and fast load times"
+        ]
+    },
+    {
         "id": "ksms-school-erp",
         "title": "KSMS School ERP",
-        "client": "Kumar Sanu",
-        "year": 2026,
-        "type": "software",
+        "year": 2024,
+        "type": "ERP System",
         "tags": [
-            "ERP",
-            "School Management",
             "MERN",
+            "ERP",
+            "Multi-role Auth",
             "Dashboard",
-            "Multi-role"
-        ],
-        "services": [
-            "School ERP & Website"
+            "MongoDB"
         ],
         "thumbnail": "/projects/thumbnail-ksms-school-erp.webp",
         "images": [
@@ -24,49 +57,81 @@
             "/projects/ksms-school-erp-img-5.webp"
         ],
         "video": null,
-        "summary": "A full-featured School ERP system with role-based access for admins, teachers, students, and parents — streamlining academics, attendance, fees, and communication.",
-        "description": "KSMS School ERP is a comprehensive school management platform built on the MERN stack. It provides role-based dashboards for administrators, teachers, students, and parents — each with tailored access and functionality. The system covers the full school workflow: student admissions and profiles, class and section management, attendance tracking, exam scheduling and result management, fee collection with payment history, timetable generation, and internal notices. A dedicated school website is also included, giving the institution a professional public presence. The platform is hosted on a VPS for full control, reliability, and data privacy.",
+        "summary": "Full school management ERP with 20+ modules for 1,500+ students — covering admissions, attendance, exams, fees, and parent communication.",
+        "description": "A production ERP system for a school with 1,500+ active students. The platform has 20+ functional modules: student admissions and profiles, class and section management, daily attendance tracking, exam scheduling and result generation, fee collection with payment history, timetable management, transport tracking, and internal notices. Built with role-based access control for 4 user types — admin, teacher, student, and parent — each with tailored dashboards and scoped permissions. All data is centralized in MongoDB. The system replaced entirely manual processes (paper registers, spreadsheets) and is self-hosted on a VPS for data privacy and uptime control.",
         "link": null,
         "featured": true,
         "techStack": [
-            "React",
+            "React.js",
             "Node.js",
             "Express.js",
             "MongoDB",
+            "Shadcn UI",
             "TailwindCSS",
-            "ShadCn",
             "VPS"
         ],
         "results": [
-            "Reduced manual administrative work by automating attendance, fee tracking, and report generation",
-            "Enabled real-time parent-teacher communication through integrated notice and messaging system",
-            "Centralized student data across admissions, academics, and finance in a single platform",
-            "Delivered role-specific dashboards for 4 user types: admin, teacher, student, and parent",
-            "Improved fee collection efficiency with digital payment tracking and receipt generation"
+            "Shipped 20+ modules covering the full school workflow from admissions to result generation",
+            "Implemented RBAC for 4 user roles: admin, teacher, student, and parent",
+            "Automated fee collection, attendance tracking, and exam result generation",
+            "Replaced paper-based processes for 1,500+ students across the institution",
+            "Deployed and maintained on VPS with full data ownership and privacy control"
+        ]
+    },
+    {
+        "id": "office-management",
+        "title": "Office Management System",
+        "year": 2024,
+        "type": "Business Software",
+        "tags": [
+            "MERN",
+            "HR System",
+            "Payroll",
+            "RBAC",
+            "Dashboard"
+        ],
+        "thumbnail": null,
+        "images": [],
+        "video": null,
+        "summary": "Internal office management platform with 15+ modules — HR, payroll, attendance, leave, project tracking, invoicing, and role-based access control.",
+        "description": "A full-featured office management system built as an internal platform for business operations. Covers 15+ modules: HR management, payroll processing, daily attendance, leave management, project and task tracking, invoicing, expense management, and role-based access control. Each employee role (admin, HR, manager, employee) gets a scoped dashboard with only the data and actions relevant to them. The system was built to eliminate spreadsheet-based operations and consolidate business workflows into one platform. Private deployment — available on request for walkthrough.",
+        "link": null,
+        "featured": true,
+        "techStack": [
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Shadcn UI",
+            "TailwindCSS"
+        ],
+        "results": [
+            "Built 15+ modules covering HR, payroll, attendance, leave, and project tracking",
+            "Implemented role-based access for admin, HR, manager, and employee roles",
+            "Automated payroll calculation and invoice generation workflows",
+            "Centralized business operations previously managed across multiple spreadsheets",
+            "Designed a modular architecture allowing new modules to be added independently"
         ]
     },
     {
         "id": "traders-mart",
         "title": "Traders Mart",
-        "client": "Krishna Biswas",
-        "year": 2026,
-        "type": "ecommerce",
+        "year": 2025,
+        "type": "E-commerce",
         "tags": [
             "Next.js",
-            "MongoDB",
             "Node.js",
-            "Ecommerce"
-        ],
-        "services": [
-            "ecommerce"
+            "MongoDB",
+            "REST APIs",
+            "Admin Panel"
         ],
         "thumbnail": "/projects/tradersmart-in.webp",
         "images": [],
         "video": null,
-        "summary": "A modern B2C ecommerce platform with a decoupled architecture — separate storefront, API server, and admin panel.",
-        "description": "Traders Mart is a B2C ecommerce platform built with a clean three-layer architecture. The public storefront delivers a fast, responsive shopping experience. A dedicated API server handles all business logic and data operations. A separate admin panel gives the client full control over products, orders, and inventory — all independently deployable and easy to scale.",
+        "summary": "B2C e-commerce platform with decoupled architecture — separate storefront, API server, and admin panel, each independently deployable.",
+        "description": "A B2C e-commerce platform built with a clean three-layer architecture: a Next.js storefront for the public shopping experience, a Node.js/Express API server handling all business logic, and a separate React admin panel for product, order, and inventory management. Each layer is independently deployable and scalable. The platform includes product catalog, cart, checkout, order processing, inventory management, and JWT-authenticated user accounts. Hosted on Cloudflare + VPS for performance and availability.",
         "link": "https://tradersmart.in",
-        "featured": true,
+        "featured": false,
         "techStack": [
             "Next.js",
             "Node.js",
@@ -74,118 +139,50 @@
             "React",
             "MongoDB",
             "TailwindCSS",
-            "ShadCn",
+            "Shadcn UI",
             "Cloudflare",
             "VPS"
         ],
-        "results": []
+        "results": [
+            "Architected a decoupled three-layer system: storefront, API server, and admin panel",
+            "Built REST APIs for catalog, cart, checkout, orders, and inventory",
+            "Implemented JWT authentication and session management for user accounts",
+            "Deployed across Cloudflare and VPS for performance, reliability, and availability"
+        ]
     },
     {
-        "id": "expertsofdeals",
-        "title": "Expertsofdeals",
-        "client": "Siddharth Bhagat",
-        "year": 2025,
-        "type": "website",
+        "id": "ai-mock-interview",
+        "title": "AI Mock Interview Platform",
+        "year": 2024,
+        "type": "AI Tool",
         "tags": [
-            "B2B",
-            "Marketplace",
-            "Next.js",
+            "AI",
+            "Gemini API",
+            "Speech-to-Text",
             "MERN",
-            "Supplier Portal",
-            "Buyer Portal"
+            "Next.js"
         ],
-        "services": [
-            "Website Development",
-            "Hosting"
-        ],
-        "thumbnail": "/projects/exod-thumbnail.webp",
+        "thumbnail": null,
         "images": [],
         "video": null,
-        "summary": "A B2B marketplace platform connecting global suppliers and buyers — enabling seamless product discovery, verified business listings, and direct trade inquiries worldwide.",
-        "description": "Expertsofdeals is a B2B trade platform designed to bridge the gap between suppliers and buyers across the globe. Businesses can create verified company profiles, list their products or services, and receive direct inquiries from potential buyers. The platform features smart search and filtering to help buyers find the right suppliers by category, location, and product type. Suppliers get a dedicated dashboard to manage their listings, track leads, and respond to inquiries efficiently. Built on the MERN stack with Next.js for a fast, SEO-optimized public-facing experience, the platform is structured to scale as new industries and regions are onboarded.",
-        "link": "https://expertsofdeals.com",
-        "featured": true,
+        "summary": "AI-powered interview practice platform — users speak answers, get real-time Gemini API feedback, and track performance across custom interview sessions.",
+        "description": "A developer side-project that combines speech-to-text input with Gemini API analysis to simulate real interview sessions. Users select a topic or role, answer questions verbally, and receive structured AI feedback on their response quality, relevance, and clarity. Built with Next.js and Node.js for the full-stack layer, the Web Speech API for voice capture, and Google's Gemini API for answer evaluation. The project was an exercise in working with LLM APIs, managing real-time audio input, and building a clean feedback UX.",
+        "link": null,
+        "featured": false,
         "techStack": [
             "Next.js",
-            "React",
+            "React.js",
             "Node.js",
             "Express.js",
             "MongoDB",
-            "MUI",
-            "TailwindCSS"
+            "Gemini API",
+            "Web Speech API"
         ],
         "results": [
-            "Built a scalable supplier-buyer marketplace supporting multi-category product listings",
-            "Implemented verified business profiles to build trust across global trade connections",
-            "Delivered SEO-optimized public pages to drive organic traffic from international buyers",
-            "Enabled direct inquiry system allowing buyers to contact suppliers without intermediaries",
-            "Integrated smart search and category filtering to improve product discovery experience"
-        ]
-    },
-    {
-        "id": "ksms-lucknow",
-        "title": "KSMS Lucknow",
-        "client": "Kumar Sanu",
-        "year": 2026,
-        "type": "website",
-        "tags": [
-            "School Website",
-            "NextJs",
-            "Responsive",
-            "SEO"
-        ],
-        "services": [
-            "Website"
-        ],
-        "thumbnail": "/projects/ksmslucknow-thumbnail.webp",
-        "images": [],
-        "video": null,
-        "summary": "A professional school website for KSMS Lucknow — showcasing academics, admissions, faculty, and school activities with a clean and modern design.",
-        "description": "KSMS Lucknow's website serves as the digital face of the institution. It presents essential information for parents and students — including academic programs, admission procedures, faculty profiles, school events, and contact details. Built with performance and SEO in mind, the site ensures the school ranks well in local searches and delivers a smooth browsing experience across all devices. The clean layout and intuitive navigation reflect the school's commitment to professionalism and accessibility.",
-        "link": null,
-        "featured": false,
-        "techStack": [
-            "Next.js",
-            "TailwindCSS"
-        ],
-        "results": [
-            "Delivered a fully responsive school website accessible across all devices and screen sizes",
-            "Improved school's online presence with SEO-optimized pages for local search visibility",
-            "Structured clear navigation for academics, admissions, faculty, and contact information",
-            "Reduced parent inquiries by providing all essential school information in one place"
-        ]
-    },
-    {
-        "id": "vindhya-academy",
-        "title": "Vindhya Academy",
-        "client": "Balendra Mishra",
-        "year": 2025,
-        "type": "website",
-        "tags": [
-            "School Website",
-            "NextJs",
-            "Responsive",
-            "SEO"
-        ],
-        "services": [
-            "Website"
-        ],
-        "thumbnail": "/projects/vindhyaacademy-thumbnail.webp",
-        "images": [],
-        "video": null,
-        "summary": "A modern, responsive website for Vindhya Academy — built to establish a strong digital presence and help parents and students easily access school information.",
-        "description": "Vindhya Academy's website was designed to give the institution a credible and professional online identity. The site highlights the school's vision, academic offerings, admission process, and key achievements. Built with Next.js and TailwindCSS, it loads fast and ranks well on search engines. Parents can quickly find information about fee structure, school timings, faculty, and how to get in touch — all presented through a clean, easy-to-navigate interface optimized for both desktop and mobile users.",
-        "link": null,
-        "featured": false,
-        "techStack": [
-            "Next.js",
-            "TailwindCSS"
-        ],
-        "results": [
-            "Established a strong digital identity for the school with a professional and modern design",
-            "Optimized for local SEO to help parents discover the school through search engines",
-            "Provided a mobile-first experience ensuring smooth access on smartphones and tablets",
-            "Organized key information — admissions, faculty, academics — into a clear and accessible layout"
+            "Integrated Gemini API to evaluate spoken interview answers with structured feedback",
+            "Built speech-to-text pipeline using the Web Speech API for real-time voice capture",
+            "Designed session-based interview flow with topic selection and score tracking",
+            "Gained hands-on experience with LLM API integration and prompt engineering"
         ]
     }
 ]

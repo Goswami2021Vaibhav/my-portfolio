@@ -6,28 +6,28 @@ import { ShieldCheck, Cpu, Zap, MessageSquare, Code2, Rocket, LayoutGrid, Globe 
 
 const advantages = [
   {
-    title: "Multi-Stack Engineering",
-    description: "Whether it's a high-performance MERN application, a robust Laravel backend, or a scalable Shopify powerhouse, I choose the right tool for your specific goal.",
+    title: "Production MERN Experience",
+    description: "3+ years shipping real products with React, Next.js, Node.js, Express, and MongoDB. Currently maintaining 15+ REST APIs serving a marketplace with 4,000+ buyers and 2,000+ suppliers.",
     icon: <LayoutGrid size={24} />,
-    tag: "Versatile"
+    tag: "MERN Stack"
   },
   {
-    title: "Clean UI/UX DNA",
-    description: "I don't just 'code' designs; I engineer experiences using Shadcn UI and Tailwind CSS to ensure a premium, modern aesthetic across all platforms.",
-    icon: <Code2 size={24} />,
-    tag: "Design"
+    title: "Complex System Builder",
+    description: "Delivered ERP and business management platforms with 15–20+ modules—HR, payroll, attendance, exams, transport, role-based access—for real users at scale, not toy projects.",
+    icon: <Cpu size={24} />,
+    tag: "Systems"
   },
   {
-    title: "Performance & SEO First",
-    description: "Every line of code—from Liquid templates to React components—is optimized for Core Web Vitals and organic search scalability.",
+    title: "Performance-Driven",
+    description: "Reduced backend response times by ~25% through Redis caching and query optimization. Maintained 99%+ uptime on self-managed Linux VPS across multiple production deployments.",
     icon: <Zap size={24} />,
     tag: "Efficiency"
   },
   {
-    title: "Transparent Workflow",
-    description: "I keep you in the loop with automated updates and modern deployment via Coolify or Dokploy, ensuring your project is always live and monitored.",
-    icon: <MessageSquare size={24} />,
-    tag: "Communication"
+    title: "Full-Cycle Ownership",
+    description: "I take work from API design to production deployment using Dokploy on Linux VPS. I don't hand off—I own the delivery and monitor what I ship.",
+    icon: <Rocket size={24} />,
+    tag: "DevOps"
   }
 ]
 
@@ -44,14 +44,14 @@ export default function WhyWorkWithMe() {
             whileInView={{ opacity: 1 }}
             className="text-accent text-[10px] font-black uppercase tracking-[0.3em] mb-4 block"
           >
-            Why Collaborate
+            Why Hire Me
           </motion.span>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             className="text-5xl md:text-7xl font-display font-black text-foreground"
           >
-            The Developer <span className="text-accent italic">Advantage.</span>
+            What I Bring to <span className="text-accent italic">Your Team.</span>
           </motion.h2>
         </div>
 
@@ -90,9 +90,9 @@ export default function WhyWorkWithMe() {
           className="mt-16 p-8 rounded-[3rem] bg-zinc-900/20 border border-zinc-800/40 flex flex-wrap justify-around items-center gap-8 text-center"
         >
           {[
-            { icon: <ShieldCheck size={20} />, label: "Secure Architecture" },
-            { icon: <Rocket size={20} />, label: "Fast Deployment" },
-            { icon: <Globe size={20} />, label: "Global Standards" }
+            { icon: <ShieldCheck size={20} />, label: "JWT & RBAC Auth" },
+            { icon: <Rocket size={20} />, label: "VPS Deployment" },
+            { icon: <Globe size={20} />, label: "REST API Design" }
           ].map((feature, i) => (
             <React.Fragment key={i}>
               <div className="flex flex-col items-center">

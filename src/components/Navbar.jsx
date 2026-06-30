@@ -8,8 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import {
   Home,
   Briefcase,
-  Wrench,
-  Users,
+  User,
   Mail,
   MessageCircle,
   X,
@@ -17,9 +16,8 @@ import {
 } from 'lucide-react'
 const navLinks = [
   { label: 'Home', href: '/', icon: Home },
+  { label: 'About', href: '/about', icon: User },
   { label: 'My Work', href: '/work', icon: Briefcase },
-  { label: 'Services', href: '/services', icon: Wrench },
-  { label: 'Testimonials', href: '/testimonials', icon: Users },
   { label: 'Contact', href: '/contact', icon: Mail },
 ]
 
@@ -263,7 +261,7 @@ export default function Navbar() {
                 className="group flex items-center justify-between w-full px-6 py-2 bg-accent rounded-[2rem] text-background transition-transform active:scale-95"
               >
                 <span className="text-xl font-black uppercase font-display tracking-tight">
-                  Start a Project
+                  Get in Touch
                 </span>
                 <div className="bg-background/20 p-2 rounded-full">
                   <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />

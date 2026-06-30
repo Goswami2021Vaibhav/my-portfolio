@@ -6,11 +6,8 @@ import {
   Globe,
   Database,
   ShoppingCart,
-  Zap,
-  Smartphone,
-  Palette,
-  Search,
-  TrendingUp,
+  Code2,
+  Server,
   ArrowUpRight,
   Terminal
 } from 'lucide-react'
@@ -19,69 +16,45 @@ import Link from 'next/link'
 
 const serviceCategories = [
   {
-    title: "Custom Web Solutions",
-    description: "High-performance, scalable web apps built with MERN & Next.js for seamless user experiences.",
+    title: "Full-Stack Web Development",
+    description: "Building end-to-end web apps with React, Next.js, Node.js, and Express — clean architecture, reusable components, and maintainable codebases from day one.",
     icon: <Globe className="text-accent" size={28} />,
-    tags: ["MERN", "Next.js", "Laravel", "WordPress"],
+    tags: ["React.js", "Next.js", "Node.js", "Express.js"],
     size: "lg",
     color: "from-orange-500/5"
   },
   {
-    title: "Custom ERP & Business Automation",
-    description: "Tailored internal systems to streamline operations and automate complex workflows.",
+    title: "ERP & Business Systems",
+    description: "Delivered 20+ module platforms covering HR, payroll, attendance, exams, transport, and RBAC for real organizations with 1,500+ active users.",
     icon: <Database className="text-accent" size={28} />,
-    tags: ["MERN", "Next.js", "Laravel"],
+    tags: ["MERN", "MySQL", "Redux", "Shadcn UI"],
     size: "md",
     color: "from-blue-500/5"
   },
   {
-    title: "Custom Ecommerce",
-    description: "Bespoke online stores designed to handle high traffic and complex sales logic.",
+    title: "E-commerce Development",
+    description: "Built scalable stores with product catalog, cart, order flow, payment integration, inventory management, and JWT-authenticated APIs.",
     icon: <ShoppingCart className="text-accent" size={28} />,
-    tags: ["Next.js", "Shopify", "WooCommerce"],
+    tags: ["Next.js", "Node.js", "MongoDB"],
     size: "sm",
     color: "from-green-500/5"
   },
   {
-    title: "Shopify Growth",
-    description: "Data-driven optimization and custom Liquid development to scale your Shopify store.",
-    icon: <Zap className="text-accent" size={28} />,
-    tags: ["Liquid", "Shopify", "Custom Themes"],
+    title: "REST API & Backend Engineering",
+    description: "Designed and maintained 15+ production REST APIs with Express and Node.js. Optimized query performance with Redis caching — achieving ~25% faster response times.",
+    icon: <Code2 className="text-accent" size={28} />,
+    tags: ["Node.js", "Express.js", "Redis", "MongoDB"],
     size: "sm",
     color: "from-yellow-500/5"
   },
   {
-    title: "App Development",
-    description: "Lightweight, native-feel mobile applications for both iOS and Android.",
-    icon: <Smartphone className="text-accent" size={28} />,
-    tags: ["React Native", "Flutter"],
-    size: "sm",
-    color: "from-purple-500/5"
-  },
-  {
-    title: "Brand Identity & UI/UX",
-    description: "Strategic design systems that bridge the gap between beauty and usability.",
-    icon: <Palette className="text-accent" size={28} />,
-    tags: ["Figma", "Adobe XD", "Branding"],
+    title: "Deployment & DevOps",
+    description: "Self-managed Linux VPS infrastructure using Dokploy across 6+ projects. Maintained 99%+ uptime on production applications end-to-end.",
+    icon: <Server className="text-accent" size={28} />,
+    tags: ["Linux VPS", "Dokploy", "Git", "GitHub"],
     size: "md",
-    color: "from-pink-500/5"
-  },
-  {
-    title: "Search Engine Optimization",
-    description: "Technical and on-page optimization strategies to dominate organic search rankings.",
-    icon: <Search className="text-accent" size={28} />,
-    tags: ["SEO", "Content Strategy", "Analytics"],
-    size: "sm",
     color: "from-cyan-500/5"
   },
-  {
-    title: "Performance Marketing",
-    description: "ROI-focused campaigns designed to scale your presence and drive conversions.",
-    icon: <TrendingUp className="text-accent" size={28} />,
-    tags: ["Meta", "Google Ads"],
-    size: "sm",
-    color: "from-red-500/5"
-  }
 ]
 
 export default function ServicesPage() {
@@ -100,7 +73,7 @@ export default function ServicesPage() {
               animate={{ opacity: 1, x: 0 }}
               className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-accent text-[10px] font-black uppercase tracking-widest mb-8"
             >
-              <Terminal size={12} /> Expert Solutions
+              <Terminal size={12} /> Web & Software Development
             </motion.div>
 
             <motion.h1
@@ -108,11 +81,11 @@ export default function ServicesPage() {
               animate={{ opacity: 1, y: 0 }}
               className="text-5xl md:text-7xl font-display font-black text-foreground mb-8 tracking-tighter"
             >
-              My <span className="text-accent italic">Services.</span>
+              My <span className="text-accent italic">Expertise.</span>
             </motion.h1>
 
             <p className="text-zinc-500 text-xl leading-relaxed border-l-2 border-zinc-800 pl-6 max-w-xl">
-              I offer a suite of creative and technical services grounded in clarity, crafted to express your unique business purpose.
+              I specialize in web and custom software development — building full-stack products, complex ERPs, and e-commerce platforms that work in production.
             </p>
           </div>
 
@@ -125,10 +98,10 @@ export default function ServicesPage() {
             >
               <div className="flex flex-col gap-1">
                 <div className="flex items-center gap-2">
-                  <div className="size-2 rounded-full bg-accent animate-pulse" />
-                  <span className="text-[10px] font-black uppercase tracking-widest text-accent">Available for Projects</span>
+                  <div className="size-2 rounded-full bg-green-500 animate-pulse" />
+                  <span className="text-[10px] font-black uppercase tracking-widest text-green-500">Open to Full-Time Roles</span>
                 </div>
-                <h4 className="text-xl font-bold text-foreground">Let's build something.</h4>
+                <h4 className="text-xl font-bold text-foreground">Let's work together.</h4>
               </div>
               <Link href={process.env.NEXT_PUBLIC_WHATSAPP_LINK}  className="size-12 rounded-full bg-accent flex items-center justify-center text-background group-hover:rotate-45 transition-transform">
                 <ArrowUpRight size={24} strokeWidth={3} />
@@ -138,12 +111,12 @@ export default function ServicesPage() {
             {/* Metric Grid */}
             <div className="grid grid-cols-2 gap-4">
               <div className="p-6 rounded-[2.5rem] bg-zinc-900/20 border border-zinc-800 text-center group hover:bg-zinc-900/40 transition-colors">
-                <div className="text-3xl font-display font-black text-foreground group-hover:text-accent transition-colors">99%</div>
-                <div className="text-[8px] uppercase tracking-widest text-zinc-500 font-bold">Satisfaction</div>
+                <div className="text-3xl font-display font-black text-foreground group-hover:text-accent transition-colors">3+</div>
+                <div className="text-[8px] uppercase tracking-widest text-zinc-500 font-bold">Years Exp.</div>
               </div>
               <div className="p-6 rounded-[2.5rem] bg-zinc-900/20 border border-zinc-800 text-center group hover:bg-zinc-900/40 transition-colors">
-                <div className="text-3xl font-display font-black text-foreground group-hover:text-accent transition-colors">50+</div>
-                <div className="text-[8px] uppercase tracking-widest text-zinc-500 font-bold">Happy Clients</div>
+                <div className="text-3xl font-display font-black text-foreground group-hover:text-accent transition-colors">20+</div>
+                <div className="text-[8px] uppercase tracking-widest text-zinc-500 font-bold">Projects</div>
               </div>
             </div>
           </div>
@@ -203,13 +176,13 @@ export default function ServicesPage() {
         <section className="mt-28 rounded-[3.5rem] bg-zinc-900/30 border border-zinc-800/50 sm:p-12 p-8 md:p-20 text-center relative overflow-hidden">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent" />
           <h2 className="text-4xl md:text-6xl font-display font-black text-foreground mb-6">
-            Ready to Grow your <span className="text-accent italic">Business?</span>
+            Looking for a <span className="text-accent italic">Developer?</span>
           </h2>
           <p className="text-zinc-500 text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-            Let's collaborate to transform your digital infrastructure into a high-converting, user-friendly powerhouse.
+            I'm open to full-time roles in web and software development. If you need someone who can own a product end-to-end, let's talk.
           </p>
           <a href={process.env.NEXT_PUBLIC_WHATSAPP_LINK} className="sm:px-10 px-8 sm:py-5 py-3 rounded-full bg-accent text-background font-black uppercase tracking-[0.2em] text-xs hover:scale-105 transition-transform shadow-2xl shadow-accent/20">
-            Get Started Today
+            Get in Touch
           </a>
         </section>
       </div>

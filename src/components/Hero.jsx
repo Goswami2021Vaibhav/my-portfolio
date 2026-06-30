@@ -4,25 +4,24 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import Typewriter from 'typewriter-effect'
-import { MessageCircle, ArrowRight, Zap, Globe } from 'lucide-react'
+import { MessageCircle, ArrowRight, Zap, Briefcase } from 'lucide-react'
 
 const stats = [
-    { value: '4+', label: 'Years Exp.' },
-    { value: '80+', label: 'Projects' },
-    { value: '50+', label: 'Happy Clients' },
-    { value: '99%', label: 'Satisfaction' },
+    { value: '3+', label: 'Years Exp.' },
+    { value: '20+', label: 'Projects' },
+    { value: '10+', label: 'Tech Stacks' },
+    { value: '5', label: 'Domains' },
 ]
 
-// Tech stack reorganized: Modern tech first, WordPress added
 const techStack = [
     { name: 'Next.js', icon: 'nextdotjs' },
     { name: 'React', icon: 'react' },
     { name: 'Node.js', icon: 'nodedotjs' },
+    { name: 'Express.js', icon: 'express' },
     { name: 'MongoDB', icon: 'mongodb' },
-    { name: 'Laravel', icon: 'laravel' },
-    { name: 'Shopify', icon: 'shopify' },
-    { name: 'WordPress', icon: 'wordpress' },
-    { name: 'PHP', icon: 'php' },
+    { name: 'MySQL', icon: 'mysql' },
+    { name: 'Redis', icon: 'redis' },
+    { name: 'TypeScript', icon: 'typescript' },
 ]
 
 const fadeUp = {
@@ -59,7 +58,7 @@ export default function Hero() {
                         <motion.div variants={fadeUp} initial="hidden" animate="show" custom={0}
                             className="inline-flex items-center gap-2 bg-surface border border-border rounded-full px-4 py-2 mb-6 w-fit">
                             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                            <span className="text-muted text-xs font-body tracking-wide uppercase">Available for new projects</span>
+                            <span className="text-muted text-xs font-body tracking-wide uppercase">Open to full-time opportunities</span>
                         </motion.div>
 
                         <motion.h1
@@ -90,17 +89,17 @@ export default function Hero() {
 
                         <motion.p variants={fadeUp} initial="hidden" animate="show" custom={2}
                             className="font-body text-muted text-base lg:text-lg leading-relaxed mb-10 max-w-lg">
-                            I build high-performance digital solutions—specializing in
-                            <span className="text-foreground"> modern web apps</span> and
-                            <span className="text-foreground"> scalable e-commerce</span> platforms that drive growth.
+                            I bring 3+ years of hands-on engineering to
+                            <span className="text-foreground"> product teams</span>—shipping
+                            <span className="text-foreground"> full-stack web apps</span>, ERPs, and e-commerce platforms that scale.
                         </motion.p>
 
                         <motion.div variants={fadeUp} initial="hidden" animate="show" custom={3} className="flex flex-wrap md:justify-start justify-center gap-4 mb-12">
                             <Link href="/work" className="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-background font-body font-bold text-sm md:px-8 md:py-4 px-6 py-3 rounded-full transition-all hover:scale-105 active:scale-95 shadow-lg shadow-accent/20">
                                 View My Work <ArrowRight size={18} />
                             </Link>
-                            <a href={process.env.NEXT_PUBLIC_WHATSAPP_LINK} className="inline-flex items-center gap-2 text-foreground font-body font-medium text-sm md:px-8 md:py-4 px-6 py-3 rounded-full border border-border hover:bg-surface transition-all active:scale-95">
-                                <MessageCircle size={18} /> Let's Talk
+                            <a href="https://drive.google.com/file/d/1lekCtpoPtVu-nnDyKayHC3t2MvJttRcT/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-foreground font-body font-medium text-sm md:px-8 md:py-4 px-6 py-3 rounded-full border border-border hover:bg-surface transition-all active:scale-95">
+                                <MessageCircle size={18} /> Download Resume
                             </a>
                         </motion.div>
 
@@ -156,26 +155,12 @@ export default function Hero() {
                                     </p>
                                 </div>
 
-                                {/* Happy Clients Section with Real Avatars */}
+                                {/* Projects Shipped */}
                                 <div className="flex items-center gap-3 bg-background/60 border border-border/50 rounded-2xl px-5 py-2.5 backdrop-blur-sm">
-                                    <div className="flex -space-x-3">
-                                        {[
-                                            "https://i.pravatar.cc/150?u=1",
-                                            "https://i.pravatar.cc/150?u=2",
-                                            "https://i.pravatar.cc/150?u=5"
-                                        ].map((src, i) => (
-                                            <div key={i} className="relative w-8 h-8 rounded-full border-2 border-surface overflow-hidden group-hover:scale-110 transition-transform duration-300">
-                                                <Image
-                                                    src={src}
-                                                    alt="Client"
-                                                    fill
-                                                    className="object-cover grayscale group-hover:grayscale-0 transition-all"
-                                                    sizes="32px"
-                                                />
-                                            </div>
-                                        ))}
+                                    <div className="w-7 h-7 rounded-full bg-surface border border-border flex items-center justify-center">
+                                        <Briefcase size={13} className="text-accent" />
                                     </div>
-                                    <span className="font-body text-muted text-xs font-medium">50+ happy clients</span>
+                                    <span className="font-body text-muted text-xs font-medium">20+ projects shipped</span>
                                 </div>
                             </div>
 
@@ -205,24 +190,17 @@ export default function Hero() {
                             {/* We render the list twice on mobile to create 
                                      the seamless infinite loop effect 
                            */}
-                            {[...techStack, { name: 'Meta Ads', icon: 'meta', isLucide: true }, ...techStack, { name: 'Meta Ads', icon: 'meta', isLucide: true }].map((tech, i) => (
+                            {[...techStack, ...techStack].map((tech, i) => (
                                 <div
                                     key={i}
-                                    className={`flex items-center gap-2.5 group cursor-default transition-opacity ${i >= techStack.length + 1 ? 'md:hidden' : 'flex'}`}
+                                    className={`flex items-center gap-2.5 group cursor-default transition-opacity ${i >= techStack.length ? 'md:hidden' : 'flex'}`}
                                 >
-                                    {tech.isLucide ? (
-                                        <Globe
-                                            size={18}
-                                            className="text-muted group-hover:text-accent transition-all duration-300"
-                                        />
-                                    ) : (
-                                        <img
-                                            src={`https://cdn.simpleicons.org/${tech.icon}/71717A`}
-                                            alt={tech.name}
-                                            className="w-5 h-5 transition-all duration-300 
-                                             group-hover:[filter:invert(65%)_sepia(97%)_saturate(448%)_hue-rotate(357deg)_brightness(103%)_contrast(103%)]"
-                                        />
-                                    )}
+                                    <img
+                                        src={`https://cdn.simpleicons.org/${tech.icon}/71717A`}
+                                        alt={tech.name}
+                                        className="w-5 h-5 transition-all duration-300
+                                         group-hover:[filter:invert(65%)_sepia(97%)_saturate(448%)_hue-rotate(357deg)_brightness(103%)_contrast(103%)]"
+                                    />
                                     <span className="font-body text-muted text-[11px] font-bold group-hover:text-foreground transition-colors uppercase tracking-widest">
                                         {tech.name}
                                     </span>

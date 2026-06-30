@@ -47,8 +47,8 @@ export default function FinalCTA() {
                         whileInView={{ opacity: 1, y: 0 }}
                         className="text-3xl md:text-7xl font-display font-bold text-foreground mb-8 tracking-tight"
                     >
-                        Have an idea? Let's <br />
-                        <span className="text-accent italic text-glow">build the future.</span>
+                        Let's build something <br />
+                        <span className="text-accent italic text-glow">great together.</span>
                     </motion.h2>
 
                     <motion.p
@@ -57,9 +57,9 @@ export default function FinalCTA() {
                         transition={{ delay: 0.1 }}
                         className="text-zinc-400 text-lg md:text-xl max-w-3xl mb-12 leading-relaxed"
                     >
-                        I help founders and businesses turn complex requirements into <b className='text-foreground'>scalable
-                            digital products</b>. From high-performance ERP systems to high-converting
-                        e-commerce stores, I focus on code that performs and designs that convert.
+                        I'm looking to join a team where I can contribute across the full stack—from <b className='text-foreground'>architecting
+                            scalable backends</b> to shipping polished, performant frontends. I write code that lasts and
+                        collaborates well.
                     </motion.p>
 
                     <motion.div
@@ -68,11 +68,11 @@ export default function FinalCTA() {
                         transition={{ delay: 0.2 }}
                         className="flex flex-col md:flex-row gap-4 w-full md:w-auto"
                     >
-                        <a href={process.env.NEXT_PUBLIC_WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-accent text-background font-bold rounded-2xl flex items-center justify-center gap-3 hover:bg-accent/90 transition-all hover:scale-105 group">
-                            Start Your Project <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-                        </a>
-                        <Link href='/services' className="px-10 py-5 bg-zinc-800 text-foreground font-bold rounded-2xl border border-zinc-700 hover:bg-zinc-700 transition-all">
-                            View Services
+                        <Link href='/contact' className="px-10 py-5 bg-accent text-background font-bold rounded-2xl flex items-center justify-center gap-3 hover:bg-accent/90 transition-all hover:scale-105 group">
+                            Get in Touch <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                        </Link>
+                        <Link href='/work' className="px-10 py-5 bg-zinc-800 text-foreground font-bold rounded-2xl border border-zinc-700 hover:bg-zinc-700 transition-all">
+                            View My Work
                         </Link>
                     </motion.div>
 
@@ -81,7 +81,7 @@ export default function FinalCTA() {
                         <div className="flex items-center gap-2">
                             <div className="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.5)]" />
                             <span className="text-zinc-400 text-xs font-bold uppercase tracking-[0.2em]">
-                                Currently accepting new projects
+                                Open to full-time opportunities
                             </span>
                         </div>
 

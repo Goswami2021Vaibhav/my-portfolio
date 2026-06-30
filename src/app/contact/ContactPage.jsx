@@ -20,16 +20,16 @@ const BrandIcons = {
 const contactChannels = [
     {
         title: "Email Me",
-        value: "vaibhavgoswami.dev@gmail.com",
+        value: "goswamivaibhav72@gmail.com",
         icon: <Mail className="text-accent" size={28} />,
-        href: "mailto:vaibhavgoswami.dev@gmail.com",
+        href: "mailto:goswamivaibhav72@gmail.com",
         tag: "Primary"
     },
     {
         title: "Phone / WhatsApp",
-        value: "+91 75189 25559",
+        value: "+91 75184 45857",
         icon: <Phone className="text-accent" size={28} />,
-        href: "https://wa.me/917518925559",
+        href: "https://wa.me/917518445857",
         tag: "Direct"
     }
 ]
@@ -53,7 +53,7 @@ export default function ContactPage() {
                             animate={{ opacity: 1, x: 0 }}
                             className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-accent text-[10px] font-black uppercase tracking-widest mb-8"
                         >
-                            <Globe size={12} /> Worldwide Availability
+                            <Globe size={12} /> Open to Opportunities
                         </motion.div>
 
                         <motion.h1
@@ -61,12 +61,12 @@ export default function ContactPage() {
                             animate={{ opacity: 1, y: 0 }}
                             className="text-5xl md:text-6xl font-display font-black text-foreground mb-8"
                         >
-                            Let's Start a <br />
+                            Let's Have a <br />
                             <span className="text-accent italic">Conversation.</span>
                         </motion.h1>
 
                         <p className="text-zinc-500 text-xl leading-relaxed border-l-2 border-zinc-800 pl-6 max-w-2xl">
-                            Whether you're looking for a MERN stack specialist, a Shopify developer, or a strategic tech partner—I'm ready to help you scale.
+                            I'm currently open to full-time roles in full-stack development. If you're building something ambitious and need a developer who can own the work end-to-end, let's talk.
                         </p>
 
                     </div>
@@ -99,7 +99,7 @@ export default function ContactPage() {
                                     <div className="text-[8px] font-black uppercase tracking-widest text-zinc-600">Current Status</div>
                                     <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20">
                                         <div className="size-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                                        <span className="text-[10px] font-bold text-emerald-500 uppercase">Available for Projects</span>
+                                        <span className="text-[10px] font-bold text-emerald-500 uppercase">Open to Full-Time Roles</span>
                                     </div>
                                 </div>
                             </div>
@@ -169,7 +169,7 @@ export default function ContactPage() {
                                 <span className="text-foreground font-black uppercase tracking-widest text-xs">Currently in Lucknow, UP, India</span>
                             </div>
                             <div className="flex items-center gap-2 text-zinc-500 text-xs font-bold uppercase tracking-[0.1em]">
-                                <Terminal size={14} className="text-accent" /> Professional Tech Partnership
+                                <Terminal size={14} className="text-accent" /> Open to Relocation & Remote
                             </div>
                         </div>
                     </div>

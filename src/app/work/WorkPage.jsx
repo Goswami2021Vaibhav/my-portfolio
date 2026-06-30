@@ -9,10 +9,10 @@ import projects from '@/data/projects.json'
 import ProjectModal from '@/components/ProjectModal'
 
 const stats = [
-  { label: "Years Exp.", value: "4+" },
-  { label: "Projects", value: "80+" },
-  { label: "Happy Clients", value: "50+" },
-  { label: "Satisfaction", value: "99%" },
+  { label: "Years Exp.", value: "3+" },
+  { label: "Projects", value: "20+" },
+  { label: "Tech Stacks", value: "10+" },
+  { label: "Domains", value: "5" },
 ]
 
 export const metadata = {
@@ -35,7 +35,7 @@ export default function WorkPage() {
               animate={{ opacity: 1, x: 0 }}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-accent text-[10px] font-black uppercase tracking-widest mb-8"
             >
-              <Terminal size={14} className="text-accent" /> Portfolio Showcase
+              <Terminal size={14} className="text-accent" /> Engineering Work
             </motion.div>
 
             <motion.h1
@@ -44,7 +44,7 @@ export default function WorkPage() {
               transition={{ delay: 0.1 }}
               className="text-5xl font-display font-black text-foreground mb-8 leading-[0.9]"
             >
-              Selected <span className="text-accent italic">Works.</span>
+              Things I've <span className="text-accent italic">Built.</span>
             </motion.h1>
 
             <motion.p
@@ -53,9 +53,9 @@ export default function WorkPage() {
               transition={{ delay: 0.2 }}
               className="text-zinc-500 text-lg md:text-xl max-w-xl leading-relaxed border-l-2 border-accent/30 pl-6"
             >
-              Engineering full-stack solutions with a focus on{' '}
-              <span className="text-zinc-200">performance</span>,{' '}
-              <span className="text-zinc-200">scalability</span>, and clean UI/UX.
+              Real projects shipped in production — ERPs, marketplaces, e-commerce platforms, and developer tools built with{' '}
+              <span className="text-zinc-200">MERN</span> and{' '}
+              <span className="text-zinc-200">Next.js</span>.
             </motion.p>
           </div>
 
@@ -100,12 +100,20 @@ export default function WorkPage() {
               {/* Image */}
               <div className="relative md:h-[400px] h-[300px] w-full overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent z-10" />
-                <Image
-                  src={project.thumbnail}
-                  alt={project.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-[2s]"
-                />
+                {project.thumbnail ? (
+                  <Image
+                    src={project.thumbnail}
+                    alt={project.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-[2s]"
+                  />
+                ) : (
+                  <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900 flex items-center justify-center">
+                    <span className="text-zinc-600 font-display font-black text-6xl tracking-tighter select-none">
+                      {project.title.charAt(0)}
+                    </span>
+                  </div>
+                )}
 
                 {/* Type Badge */}
                 <div className="absolute md:top-10 md:left-10 top-5 left-5 z-20">

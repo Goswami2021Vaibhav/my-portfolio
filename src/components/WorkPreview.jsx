@@ -126,7 +126,7 @@ export default function WorkPreview() {
                         transition={{ delay: 0.2 }}
                         className="font-body text-muted text-lg max-w-sm border-l-2 border-border pl-6"
                     >
-                        Crafting digital experiences with modern stacks including <span className="text-foreground">MERN</span>, <span className="text-foreground">Next.js</span>, <span className="text-foreground">Laravel</span> and <span className="text-foreground">Shopify</span>.
+                        Production systems built with <span className="text-foreground">MERN</span>, <span className="text-foreground">Next.js</span>, <span className="text-foreground">Redis</span> and <span className="text-foreground">MySQL</span>.
                     </motion.p>
                 </header>
 

@@ -8,12 +8,15 @@ const techStack = [
     { name: 'Next.js', icon: 'nextdotjs' },
     { name: 'React', icon: 'react' },
     { name: 'Node.js', icon: 'nodedotjs' },
+    { name: 'Express.js', icon: 'express' },
     { name: 'MongoDB', icon: 'mongodb' },
-    { name: 'Laravel', icon: 'laravel' },
-    { name: 'Shopify', icon: 'shopify' },
-    { name: 'WordPress', icon: 'wordpress' },
-    { name: 'PHP', icon: 'php' },
-    { name: 'Meta Ads', icon: 'meta', isLucide: true },
+    { name: 'MySQL', icon: 'mysql' },
+    { name: 'Redis', icon: 'redis' },
+    { name: 'TypeScript', icon: 'typescript' },
+    { name: 'Redux', icon: 'redux' },
+    { name: 'Tailwind CSS', icon: 'tailwindcss' },
+    { name: 'Git', icon: 'git' },
+    { name: 'GitHub', icon: 'github' },
 ]
 
 export default function TechMarquee() {

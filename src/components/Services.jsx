@@ -2,67 +2,45 @@
 
 import React, { useRef } from 'react'
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
-import { 
-  Globe, ShoppingCart, Zap, Smartphone, 
-  Search, LineChart, Palette, Database 
+import {
+  Globe, ShoppingCart, Database, Code2, Server, Zap
 } from 'lucide-react'
 
 const services = [
   {
-    title: "Custom Web Solutions",
-    description: "High-performance, scalable web apps built with MERN & Next.js for seamless user experiences.",
+    title: "Full-Stack Web Development",
+    description: "Building end-to-end web apps with React, Next.js, Node.js, and Express—clean architecture, reusable components, and maintainable codebases from day one.",
     icon: <Globe className="w-8 h-8" />,
     className: "md:col-span-6",
-    tech: "MERN / Next.js / Laravel / WordPress",
+    tech: "React.js / Next.js / Node.js / Express.js",
   },
   {
-    title: "Custom ERP & Business Automation",
-    description: "Tailored internal systems to streamline operations and automate complex workflows.",
+    title: "ERP & Business Systems",
+    description: "Delivered 20+ module platforms covering HR, payroll, attendance, exams, transport, and RBAC for real organizations with 1,500+ active users.",
     icon: <Database className="w-8 h-8" />,
     className: "md:col-span-6",
-    tech: "MERN / Next.js / Laravel",
+    tech: "MERN / MySQL / Redux / Shadcn UI",
   },
   {
-    title: "Custom Ecommerce",
-    description: "Bespoke online stores designed to handle high traffic and complex sales logic.",
+    title: "E-commerce Development",
+    description: "Built scalable stores with product catalog, cart, order flow, payment integration, inventory management, and JWT-authenticated APIs.",
     icon: <ShoppingCart className="w-8 h-8" />,
     className: "md:col-span-4",
-    tech: "Next.js / Shopify / WooCommerce",
+    tech: "Next.js / Node.js / MongoDB",
   },
   {
-    title: "Shopify Growth",
-    description: "Data-driven optimization and custom Liquid development to scale your Shopify store.",
-    icon: <Zap className="w-8 h-8" />,
+    title: "REST API & Backend Engineering",
+    description: "Designed and maintained 15+ production REST APIs with Express and Node.js. Optimized query performance with Redis caching—achieving ~25% faster response times.",
+    icon: <Code2 className="w-8 h-8" />,
     className: "md:col-span-4",
-    tech: "Liquid / Shopify / Custom Themes",
+    tech: "Node.js / Express.js / Redis / MongoDB",
   },
   {
-    title: "App Development",
-    description: "Lightweight, native-feel mobile applications for both iOS and Android.",
-    icon: <Smartphone className="w-8 h-8" />,
+    title: "Deployment & DevOps",
+    description: "Self-managed Linux VPS infrastructure using Dokploy across 6+ client projects. Maintained 99%+ uptime on production applications end-to-end.",
+    icon: <Server className="w-8 h-8" />,
     className: "md:col-span-4",
-    tech: "React Native / Flutter",
-  },
-  {
-    title: "Brand Identity & UI/UX",
-    description: "Strategic design systems that bridge the gap between beauty and usability.",
-    icon: <Palette className="w-8 h-8" />,
-    className: "md:col-span-4",
-    tech: "Figma / Adobe XD / Branding",
-  },
-  {
-    title: "Search Engine Optimization",
-    description: "Technical and on-page optimization strategies to dominate organic search rankings.",
-    icon: <Search className="w-8 h-8" />,
-    className: "md:col-span-4",
-    tech: "SEO / Content Strategy / Analytics",
-  },
-  {
-    title: "Performance Marketing",
-    description: "ROI-focused campaigns designed to scale your presence and drive conversions.",
-    icon: <LineChart className="w-8 h-8" />,
-    className: "md:col-span-4",
-    tech: "Meta / Google Ads",
+    tech: "Linux VPS / Dokploy / Git / GitHub",
   },
 ]
 
@@ -125,10 +103,10 @@ export default function ServicesBento() {
     <section className="pt-28 md:px-0 px-5 max-w-7xl mx-auto">
       <div className="flex flex-col items-center mb-16 text-center">
         <motion.span className="text-accent font-display font-bold tracking-widest uppercase text-xs mb-4">
-          My Services
+          My Expertise
         </motion.span>
         <h2 className="text-3xl md:text-6xl font-display font-bold text-foreground max-w-3xl">
-          Complete Digital <span className="text-accent">Solution</span>
+          What I <span className="text-accent">Bring</span> to a Team
         </h2>
       </div>
 
