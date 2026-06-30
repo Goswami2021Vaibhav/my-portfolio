@@ -7,8 +7,6 @@ import {
     X,
     ExternalLink,
     Lock,
-    Calendar,
-    User,
     ChevronLeft,
     ChevronRight,
     Store,
@@ -402,21 +400,6 @@ export default function ProjectModal({ project, onClose }) {
                                     </div>
 
                                     {/* Meta Row */}
-                                    <div className="flex flex-wrap gap-4 mb-8">
-                                        <div className="flex items-center gap-2">
-                                            <User size={13} className="text-zinc-600" />
-                                            <span className="text-sm" style={{ color: '#A1A1AA' }}>
-                                                {project.client}
-                                            </span>
-                                        </div>
-                                        <div className="w-px h-4 self-center" style={{ background: '#222222' }} />
-                                        <div className="flex items-center gap-2">
-                                            <Calendar size={13} className="text-zinc-600" />
-                                            <span className="text-sm" style={{ color: '#A1A1AA' }}>
-                                                {project.year}
-                                            </span>
-                                        </div>
-                                    </div>
 
                                     {/* Divider */}
                                     <div className="mb-8" style={{ borderTop: '1px solid #222222' }} />

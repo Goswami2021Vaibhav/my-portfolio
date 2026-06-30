@@ -1,42 +1,5 @@
 [
     {
-        "id": "expertsofdeals",
-        "title": "Expertsofdeals",
-        "year": 2025,
-        "type": "B2B Marketplace",
-        "tags": [
-            "Next.js",
-            "MERN",
-            "REST APIs",
-            "Redux",
-            "Admin Dashboard"
-        ],
-        "thumbnail": "/projects/exod-thumbnail.webp",
-        "images": [],
-        "video": null,
-        "summary": "B2B marketplace connecting 4,000+ buyers and 2,000+ suppliers. Built and maintained 15+ REST APIs and a 20+ module admin dashboard.",
-        "description": "Expertsofdeals is a live B2B marketplace platform at my current role. I own the backend API layer — 15+ REST endpoints built with Node.js and Express serving real marketplace operations across supplier onboarding, buyer inquiries, product listings, and order flows. On the frontend, I built the admin dashboard with React, Next.js, and Redux — covering 20+ operational modules including analytics, listing management, user verification, and inquiry tracking. The platform runs on a self-managed Linux VPS via Dokploy with 99%+ uptime. It currently serves 4,000+ registered buyers and 2,000+ suppliers across multiple product categories.",
-        "link": "https://expertsofdeals.com",
-        "featured": true,
-        "techStack": [
-            "Next.js",
-            "React",
-            "Node.js",
-            "Express.js",
-            "MongoDB",
-            "Redux",
-            "TailwindCSS",
-            "VPS / Dokploy"
-        ],
-        "results": [
-            "Built and maintained 15+ REST APIs serving 4,000+ buyers and 2,000+ suppliers",
-            "Developed a 20+ module admin dashboard for analytics and marketplace operations",
-            "Maintained 99%+ uptime on self-managed Linux VPS using Dokploy",
-            "Implemented supplier verification flow and buyer inquiry system end-to-end",
-            "Optimized public-facing pages with Next.js SSR for SEO and fast load times"
-        ]
-    },
-    {
         "id": "ksms-school-erp",
         "title": "KSMS School ERP",
         "year": 2024,
@@ -90,7 +53,7 @@
             "RBAC",
             "Dashboard"
         ],
-        "thumbnail": null,
+        "thumbnail": "/projects/office-software-1.png",
         "images": [],
         "video": null,
         "summary": "Internal office management platform with 15+ modules — HR, payroll, attendance, leave, project tracking, invoicing, and role-based access control.",
@@ -111,6 +74,113 @@
             "Automated payroll calculation and invoice generation workflows",
             "Centralized business operations previously managed across multiple spreadsheets",
             "Designed a modular architecture allowing new modules to be added independently"
+        ]
+    },
+    {
+        "id": "ai-mock-interview",
+        "title": "AI Mock Interview Platform",
+        "year": 2024,
+        "type": "AI Tool",
+        "tags": [
+            "AI",
+            "Gemini API",
+            "Speech-to-Text",
+            "MERN",
+            "Next.js"
+        ],
+        "thumbnail": "/projects/ai-mock-interview.png",
+        "images": [],
+        "video": null,
+        "summary": "AI-powered interview practice platform — users speak answers, get real-time Gemini API feedback, and track performance across custom interview sessions.",
+        "description": "A developer side-project that combines speech-to-text input with Gemini API analysis to simulate real interview sessions. Users select a topic or role, answer questions verbally, and receive structured AI feedback on their response quality, relevance, and clarity. Built with Next.js and Node.js for the full-stack layer, the Web Speech API for voice capture, and Google's Gemini API for answer evaluation. The project was an exercise in working with LLM APIs, managing real-time audio input, and building a clean feedback UX.",
+        "link": null,
+        "featured": false,
+        "techStack": [
+            "Next.js",
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Gemini API",
+            "Web Speech API"
+        ],
+        "results": [
+            "Integrated Gemini API to evaluate spoken interview answers with structured feedback",
+            "Built speech-to-text pipeline using the Web Speech API for real-time voice capture",
+            "Designed session-based interview flow with topic selection and score tracking",
+            "Gained hands-on experience with LLM API integration and prompt engineering"
+        ]
+    },
+    {
+        "id": "expertsofdeals",
+        "title": "Expertsofdeals",
+        "year": 2025,
+        "type": "B2B Marketplace",
+        "tags": [
+            "Next.js",
+            "MERN",
+            "REST APIs",
+            "Redux",
+            "Admin Dashboard"
+        ],
+        "thumbnail": "/projects/exod-thumbnail.webp",
+        "images": [],
+        "video": null,
+        "summary": "B2B marketplace connecting 4,000+ buyers and 2,000+ suppliers. Built and maintained 15+ REST APIs and a 20+ module admin dashboard.",
+        "description": "Expertsofdeals is a live B2B marketplace platform at my current role. I own the backend API layer — 15+ REST endpoints built with Node.js and Express serving real marketplace operations across supplier onboarding, buyer inquiries, product listings, and order flows. On the frontend, I built the admin dashboard with React, Next.js, and Redux — covering 20+ operational modules including analytics, listing management, user verification, and inquiry tracking. The platform runs on a self-managed Linux VPS via Dokploy with 99%+ uptime. It currently serves 4,000+ registered buyers and 2,000+ suppliers across multiple product categories.",
+        "link": "https://expertsofdeals.com",
+        "featured": true,
+        "techStack": [
+            "Next.js",
+            "React",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Redux",
+            "TailwindCSS",
+            "VPS / Dokploy"
+        ],
+        "results": [
+            "Built and maintained 15+ REST APIs serving 4,000+ buyers and 2,000+ suppliers",
+            "Developed a 20+ module admin dashboard for analytics and marketplace operations",
+            "Maintained 99%+ uptime on self-managed Linux VPS using Dokploy",
+            "Implemented supplier verification flow and buyer inquiry system end-to-end",
+            "Optimized public-facing pages with Next.js SSR for SEO and fast load times"
+        ]
+    },
+    {
+        "id": "travelliq",
+        "title": "Travelliq",
+        "year": 2024,
+        "type": "Travel Platform",
+        "tags": [
+            "Next.js",
+            "MERN",
+            "Package Booking",
+            "MongoDB",
+            "REST APIs"
+        ],
+        "thumbnail": "/projects/travelliq.webp",
+        "images": [],
+        "video": null,
+        "summary": "A travel destination website where users can explore destinations and book travel packages — built with a MERN backend and Next.js frontend.",
+        "description": "Travelliq is a travel destination platform that lets users browse curated travel destinations and book packages directly through the site. The frontend is built with Next.js for fast, SEO-optimized destination pages. The backend is a MERN stack — Node.js and Express handle the API layer, MongoDB stores destinations, packages, and booking data, and React powers the admin-side management. Users can explore destinations, view package details and pricing, and complete bookings through a streamlined flow. The platform is designed to scale with new destinations and package types without structural changes.",
+        "link": null,
+        "featured": false,
+        "techStack": [
+            "Next.js",
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "TailwindCSS"
+        ],
+        "results": [
+            "Built destination browsing and package listing pages with Next.js SSR for SEO performance",
+            "Developed REST APIs for destinations, packages, and booking management with Node.js and Express",
+            "Implemented end-to-end booking flow with package selection, user details, and confirmation",
+            "Stored and managed destinations, packages, and bookings in MongoDB",
+            "Designed a scalable data model allowing new destinations and packages to be added independently"
         ]
     },
     {
@@ -148,41 +218,6 @@
             "Built REST APIs for catalog, cart, checkout, orders, and inventory",
             "Implemented JWT authentication and session management for user accounts",
             "Deployed across Cloudflare and VPS for performance, reliability, and availability"
-        ]
-    },
-    {
-        "id": "ai-mock-interview",
-        "title": "AI Mock Interview Platform",
-        "year": 2024,
-        "type": "AI Tool",
-        "tags": [
-            "AI",
-            "Gemini API",
-            "Speech-to-Text",
-            "MERN",
-            "Next.js"
-        ],
-        "thumbnail": null,
-        "images": [],
-        "video": null,
-        "summary": "AI-powered interview practice platform — users speak answers, get real-time Gemini API feedback, and track performance across custom interview sessions.",
-        "description": "A developer side-project that combines speech-to-text input with Gemini API analysis to simulate real interview sessions. Users select a topic or role, answer questions verbally, and receive structured AI feedback on their response quality, relevance, and clarity. Built with Next.js and Node.js for the full-stack layer, the Web Speech API for voice capture, and Google's Gemini API for answer evaluation. The project was an exercise in working with LLM APIs, managing real-time audio input, and building a clean feedback UX.",
-        "link": null,
-        "featured": false,
-        "techStack": [
-            "Next.js",
-            "React.js",
-            "Node.js",
-            "Express.js",
-            "MongoDB",
-            "Gemini API",
-            "Web Speech API"
-        ],
-        "results": [
-            "Integrated Gemini API to evaluate spoken interview answers with structured feedback",
-            "Built speech-to-text pipeline using the Web Speech API for real-time voice capture",
-            "Designed session-based interview flow with topic selection and score tracking",
-            "Gained hands-on experience with LLM API integration and prompt engineering"
         ]
     }
 ]
