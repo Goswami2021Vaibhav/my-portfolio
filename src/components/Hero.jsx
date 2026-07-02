@@ -98,7 +98,7 @@ export default function Hero() {
                             <Link href="/work" className="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-background font-body font-bold text-sm md:px-8 md:py-4 px-6 py-3 rounded-full transition-all hover:scale-105 active:scale-95 shadow-lg shadow-accent/20">
                                 View My Work <ArrowRight size={18} />
                             </Link>
-                            <a href="https://drive.google.com/file/d/1sb424Os1waWj_nOY-ufovbx23ODdbld8/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-foreground font-body font-medium text-sm md:px-8 md:py-4 px-6 py-3 rounded-full border border-border hover:bg-surface transition-all active:scale-95">
+                            <a href="https://drive.google.com/file/d/1BDVeBNk8jPsqxsfe5w6eA7Js5p-D7ws_/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-foreground font-body font-medium text-sm md:px-8 md:py-4 px-6 py-3 rounded-full border border-border hover:bg-surface transition-all active:scale-95">
                                 <MessageCircle size={18} /> Download Resume
                             </a>
                         </motion.div>

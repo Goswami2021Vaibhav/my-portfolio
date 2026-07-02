@@ -91,7 +91,7 @@ export default function AboutPage() {
                             className="flex flex-wrap gap-4 mt-10"
                         >
                             <a
-                                href="https://drive.google.com/file/d/1sb424Os1waWj_nOY-ufovbx23ODdbld8/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1BDVeBNk8jPsqxsfe5w6eA7Js5p-D7ws_/view?usp=sharing"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-background font-bold text-sm px-7 py-3.5 rounded-full transition-all hover:scale-105"
