@@ -55,9 +55,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-zinc-500 max-w-sm text-sm leading-relaxed">
-              Specializing in high-performance MERN applications, Shopify Plus development, 
-              and custom B2B solutions like School ERP systems. 
-              Let's turn your vision into a digital masterpiece.
+             Specializing in MERN stack development, scalable REST APIs, AI-powered applications, ERP systems, and modern e-commerce platforms. Let&apos;s build software that delivers real business value.
             </p>
           </div>
 

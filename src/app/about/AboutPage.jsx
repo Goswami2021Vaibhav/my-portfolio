@@ -12,20 +12,31 @@ import Image from 'next/image'
 import WhyWorkWithMe from '@/components/WhyWorkWithMe'
 
 const experience = [
-    {
-        role: "Full Stack Developer",
-        company: "Digicrowd Solution",
-        period: "Jan 2023 – Mar 2025",
-        type: "Full-time",
-        color: "from-accent/10",
-        points: [
-            "Developed 4 business management systems (office, school, grocery, restaurant) using React.js, Next.js, Node.js, and MySQL.",
-            "Built an e-commerce platform with Next.js and Node.js, including REST APIs for catalog, cart, and checkout.",
-            "Reduced backend response times by ~25% through Redis caching and query optimization.",
-            "Deployed applications on Linux VPS using Dokploy across 6+ client projects.",
-        ]
-    },
-]
+  {
+    role: "Full Stack Developer",
+    company: "Digicrowd Solution",
+    period: "Jan 2023 – Apr 2026",
+    type: "Full-time",
+    color: "from-accent/10",
+    points: [
+      "Designed and developed scalable business management systems, including Office ERP, School ERP, Grocery Management, and Restaurant Management applications using React.js, Next.js, Node.js, Express.js, MongoDB, and MySQL.",
+
+      "Built and maintained e-commerce platforms with complete product catalog, inventory, cart, checkout, order management, and user authentication workflows.",
+
+      "Integrated multiple payment gateways including Razorpay, PhonePe, PayU, Instamojo, and PayGlocal with secure payment processing, transaction verification, and webhook handling.",
+
+      "Designed and developed RESTful APIs for frontend applications, third-party integrations, authentication, and business operations.",
+
+      "Improved backend performance by approximately 25% through Redis caching, efficient database indexing, and query optimization.",
+
+      "Implemented role-based access control (RBAC), JWT authentication, and secure API authorization across multiple applications.",
+
+      "Deployed and managed production applications on Linux VPS using Dokploy, configuring domains, SSL certificates, reverse proxies, and automated deployments.",
+
+      "Collaborated with designers, project managers, and clients to deliver production-ready web applications while maintaining code quality and scalability."
+    ]
+  },
+];
 
 const skills = [
     {
@@ -90,19 +101,12 @@ export default function AboutPage() {
                             transition={{ delay: 0.2 }}
                             className="flex flex-wrap gap-4 mt-10"
                         >
-                            <a
-                                href="https://drive.google.com/file/d/1BDVeBNk8jPsqxsfe5w6eA7Js5p-D7ws_/view?usp=sharing"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-background font-bold text-sm px-7 py-3.5 rounded-full transition-all hover:scale-105"
-                            >
-                                <Download size={16} /> Download Resume
-                            </a>
+                           
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center gap-2 text-foreground font-medium text-sm px-7 py-3.5 rounded-full border border-border hover:bg-surface transition-all"
+                                className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-background font-bold text-sm px-7 py-3.5 rounded-full transition-all hover:scale-105"
                             >
-                                Get in Touch <ArrowUpRight size={16} />
+                                 Get in Touch <ArrowUpRight size={16} />
                             </Link>
                         </motion.div>
                     </div>
