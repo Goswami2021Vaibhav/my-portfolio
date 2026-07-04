@@ -219,5 +219,166 @@
             "Implemented JWT authentication and session management for user accounts",
             "Deployed across Cloudflare and VPS for performance, reliability, and availability"
         ]
+    },
+    {
+        "id": "vindhya-academy",
+        "title": "Vindhya Academy",
+        "client": "Balendra Mishra",
+        "year": 2025,
+        "type": "website",
+        "tags": [
+            "School Website",
+            "NextJs",
+            "Responsive",
+            "SEO"
+        ],
+        "services": [
+            "Website"
+        ],
+        "thumbnail": "/projects/vindhyaacademy-thumbnail.webp",
+        "images": [
+            "/projects/vindhya-academy.png"
+        ],
+        "video": null,
+        "summary": "A modern, responsive website for Vindhya Academy — built to establish a strong digital presence and help parents and students easily access school information.",
+        "description": "Vindhya Academy's website was designed to give the institution a credible and professional online identity. The site highlights the school's vision, academic offerings, admission process, and key achievements. Built with Next.js and TailwindCSS, it loads fast and ranks well on search engines. Parents can quickly find information about fee structure, school timings, faculty, and how to get in touch — all presented through a clean, easy-to-navigate interface optimized for both desktop and mobile users.",
+        "link": "https://vindhyaacademy.com/",
+        "featured": false,
+        "techStack": [
+            "Next.js",
+            "TailwindCSS"
+        ],
+        "results": [
+            "Established a strong digital identity for the school with a professional and modern design",
+            "Optimized for local SEO to help parents discover the school through search engines",
+            "Provided a mobile-first experience ensuring smooth access on smartphones and tablets",
+            "Organized key information — admissions, faculty, academics — into a clear and accessible layout"
+        ]
+    },
+    {
+        "id": "adabkari",
+        "title": "Adabkari",
+        "year": 2026,
+        "type": "E-commerce",
+        "tags": [
+            "Next.js",
+            "MERN",
+            "Fashion",
+            "Admin Panel"
+        ],
+        "thumbnail": "/projects/adabkari-ecommerce.webp",
+        "images": [],
+        "video": null,
+        "summary": "A Lucknowi Chikankari fashion store — a full e-commerce platform for browsing, filtering, and ordering handcrafted apparel online.",
+        "description": "Adabkari is an e-commerce storefront for a Lucknowi Chikankari clothing brand, built with a Next.js frontend for fast, SEO-friendly product and category pages, and a Node.js/MongoDB backend handling products, cart, and orders. The site covers the full shopping flow — product browsing by category and fabric, cart and checkout, and order management — with an admin panel for catalog and order control.",
+        "link": "https://adabkari.com",
+        "featured": false,
+        "techStack": [
+            "Next.js",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "TailwindCSS"
+        ],
+        "results": [
+            "Built a full storefront with category and fabric-based product browsing",
+            "Implemented cart, checkout, and order management flows",
+            "Delivered an admin panel for catalog and order control",
+            "Optimized pages with Next.js for fast loads and SEO"
+        ]
+    },
+    {
+        "id": "naxpace",
+        "title": "Naxpace",
+        "year": 2026,
+        "type": "Business Website",
+        "tags": [
+            "Next.js",
+            "MERN",
+            "Corporate",
+            "SEO"
+        ],
+        "thumbnail": "/projects/naxpace.webp",
+        "images": [],
+        "video": null,
+        "summary": "A corporate website for a Dubai-based financial and accounting consultancy — showcasing services in accounting, compliance, VAT, audit, and business registration.",
+        "description": "Naxpace is the digital presence for a Dubai-based financial consultancy offering accounting, corporate compliance, business registration, audit and assurance, VAT, and tax advisory services. Built with Next.js for fast, SEO-optimized pages and a Node.js/MongoDB backend for content and inquiry handling. The site presents the firm's services, career openings, and blog content through a clean, professional layout with a direct call-to-action and contact flow for lead generation.",
+        "link": "https://naxpace.me",
+        "featured": false,
+        "techStack": [
+            "Next.js",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "TailwindCSS"
+        ],
+        "results": [
+            "Delivered a professional corporate site covering services, visa, career, and blog sections",
+            "Optimized pages with Next.js for fast loads and local SEO visibility",
+            "Built lead-generation focused contact and call-request flows",
+            "Structured content for accounting, compliance, and tax advisory service lines"
+        ]
+    },
+    {
+        "id": "digicrowd-solution",
+        "title": "DigiCrowd Solution",
+        "year": 2025,
+        "type": "Business Website",
+        "tags": [
+            "Laravel",
+            "PHP",
+            "MySQL",
+            "Digital Marketing"
+        ],
+        "thumbnail": "/projects/digicrowd.png",
+        "images": [],
+        "video": null,
+        "summary": "Corporate website for DigiCrowd Solution, an international digital marketing and IT agency — covering services, portfolio, blog, and lead-generation flows.",
+        "description": "DigiCrowd Solution's website is the digital storefront for an international digital marketing and IT company. Built with Laravel, PHP, and MySQL, the site presents the agency's services, portfolio, blog content, and careers, with Free Audit and Book Demo flows designed to convert visitors into leads. The layout emphasizes trust signals and clear calls-to-action across services, testimonials, and contact.",
+        "link": "https://digicrowdsolution.com",
+        "featured": false,
+        "techStack": [
+            "Laravel",
+            "PHP",
+            "MySQL"
+        ],
+        "results": [
+            "Built a full corporate site covering services, portfolio, blog, and careers",
+            "Implemented lead-generation flows: Free Audit, Book Demo, and Request a Call",
+            "Structured service and portfolio pages for a digital marketing and IT agency",
+            "Delivered a responsive, conversion-focused design across devices"
+        ]
+    },
+    {
+        "id": "ai-business-name-generator",
+        "title": "AI Business Name Generator",
+        "year": 2026,
+        "type": "AI Tool",
+        "tags": [
+            "AI",
+            "Next.js",
+            "Gemini API",
+            "Side Project"
+        ],
+        "thumbnail": "/projects/ai-business-name-generator.jpg",
+        "images": [],
+        "video": null,
+        "summary": "An AI-powered tool that generates business name ideas from a keyword and description, with controls for name style and randomness.",
+        "description": "A side project that generates business name suggestions using the Gemini API. Users enter a keyword and description, then tune the output with name style options (brandable, evocative, short phrase, compound words, alternate spelling, non-English words, real words) and a randomness slider. Built with Next.js and Tailwind CSS, with Shadcn UI for the interface components.",
+        "link": "https://ai-business-name-generator.vercel.app/",
+        "featured": false,
+        "techStack": [
+            "Next.js",
+            "JavaScript",
+            "TailwindCSS",
+            "Shadcn UI",
+            "Gemini API"
+        ],
+        "results": [
+            "Integrated Gemini API to generate business name ideas from a keyword and description",
+            "Built configurable generation controls: name style and randomness level",
+            "Designed a clean, responsive UI with Shadcn UI components",
+            "Deployed on Vercel for fast global access"
+        ]
     }
 ]
