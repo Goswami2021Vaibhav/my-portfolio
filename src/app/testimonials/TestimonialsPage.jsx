@@ -24,8 +24,8 @@ const testimonials = [
   {
     name: "Amit Singh",
     role: "E-commerce Manager",
-    content: "The custom Shopify Liquid development for our store increased our conversion rate by 20%. His technical and SEO knowledge is top-tier.",
-    project: "Shopify Growth",
+    content: "The custom Next.js storefront he built for our store increased our conversion rate by 20%. His technical and SEO knowledge is top-tier.",
+    project: "E-commerce Growth",
     avatar: "/avatars/client3.webp",
     rating: 5
   },

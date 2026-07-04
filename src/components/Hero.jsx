@@ -22,6 +22,7 @@ const techStack = [
   { name: "MySQL", icon: "mysql" },
   { name: "Redis", icon: "redis" },
   { name: "TypeScript", icon: "typescript" },
+  { name: "PWA", icon: "pwa" },
 ];
 
 const fadeUp = {
@@ -88,9 +89,6 @@ export default function Hero() {
                     strings: [
                       "& MERN Stack Dev",
                       "& Next.js Specialist",
-                      "& Shopify Expert",
-                      "& WordPress Developer",
-                      "& Laravel Architect",
                     ],
                     autoStart: true,
                     loop: true,

@@ -8,7 +8,7 @@ const testimonials = [
   {
     name: "Aman Gupta",
     role: "E-commerce Founder",
-    content: "Vaibhav transformed our Shopify store. His understanding of Liquid and performance optimization is unmatched. Our conversion rate jumped by 40%!",
+    content: "Vaibhav transformed our online store with a custom Next.js build. His understanding of performance optimization is unmatched. Our conversion rate jumped by 40%!",
     rating: 5
   },
   {

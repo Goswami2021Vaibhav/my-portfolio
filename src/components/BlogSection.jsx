@@ -14,8 +14,8 @@ const blogs = [
     image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800&auto=format&fit=crop"
   },
   {
-    title: "Optimizing Shopify Plus for 40% Better Conversions",
-    excerpt: "How custom Liquid development and headless commerce can transform your e-commerce growth...",
+    title: "Optimizing Next.js Storefronts for 40% Better Conversions",
+    excerpt: "How SSR, image optimization, and a custom checkout flow can transform your e-commerce growth...",
     date: "Feb 28, 2026",
     readTime: "5 min read",
     category: "E-commerce",

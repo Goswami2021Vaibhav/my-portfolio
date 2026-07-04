@@ -19,13 +19,13 @@ const dmSans = DM_Sans({
 })
 
 export const metadata = {
-  title: 'Vaibhav Goswami - Full Stack Developer & E-commerce Expert', //
-  description: 'Vaibhav Goswami is a Full Stack Developer with 4+ years of experience in PHP, Laravel, MERN, Next.js & Shopify. Building high-converting ecommerce websites and apps.', //
-  keywords: 'Full Stack Developer, Shopify Expert, Laravel Developer, MERN Stack, Next.js, Ecommerce Developer, India', //
+  title: 'Vaibhav Goswami - Full Stack Developer & Custom Software Developer', //
+  description: 'Vaibhav Goswami is a Full Stack Developer with 4+ years of experience in MERN & Next.js. Building custom software, ERP, and high-converting web apps.', //
+  keywords: 'Full Stack Developer, Custom Software Developer, ERP Developer, MERN Stack, Next.js, React, Node.js, India', //
   authors: [{ name: 'Vaibhav Goswami' }], //
   openGraph: {
-    title: 'Vaibhav Goswami - Full Stack Developer & E-commerce Expert',
-    description: 'Building high-converting ecommerce websites and apps.',
+    title: 'Vaibhav Goswami - Full Stack Developer & Custom Software Developer',
+    description: 'Building custom software, ERP, and high-converting web apps.',
     url: 'https://vaibhavgoswami.com',
     siteName: 'Vaibhav Goswami',
     locale: 'en_IN',
@@ -33,8 +33,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vaibhav Goswami - Full Stack Developer & E-commerce Expert',
-    description: 'Building high-converting ecommerce websites and apps.',
+    title: 'Vaibhav Goswami - Full Stack Developer & Custom Software Developer',
+    description: 'Building custom software, ERP, and high-converting web apps.',
   },
   robots: {
     index: true,
