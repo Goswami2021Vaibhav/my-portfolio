@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import { MessageCircle, ArrowRight, Zap, Briefcase } from "lucide-react";
+import { Download, ArrowRight, Zap, Briefcase } from "lucide-react";
 
 const stats = [
   { value: "3+", label: "Years Exp." },
@@ -130,6 +130,14 @@ export default function Hero() {
               >
                 View My Work <ArrowRight size={18} />
               </Link>
+              <a
+                href="https://drive.google.com/file/d/15nhnxcIe9Bc1sVvNAdOBem0jYsHjVTuE/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-foreground font-body font-medium text-sm md:px-8 md:py-4 px-6 py-3 rounded-full border border-border hover:bg-surface transition-all active:scale-95"
+              >
+                Download Resume <Download size={18} />
+              </a>
             </motion.div>
 
             {/* Stats Row */}

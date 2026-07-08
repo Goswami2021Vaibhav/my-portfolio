@@ -101,13 +101,20 @@ export default function AboutPage() {
                             transition={{ delay: 0.2 }}
                             className="flex flex-wrap gap-4 mt-10"
                         >
-                           
                             <Link
                                 href="/contact"
                                 className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-background font-bold text-sm px-7 py-3.5 rounded-full transition-all hover:scale-105"
                             >
                                  Get in Touch <ArrowUpRight size={16} />
                             </Link>
+                            <a
+                                href="https://drive.google.com/file/d/15nhnxcIe9Bc1sVvNAdOBem0jYsHjVTuE/view?usp=sharing"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 text-foreground font-bold text-sm px-7 py-3.5 rounded-full border border-zinc-800 hover:bg-zinc-900 transition-all hover:scale-105"
+                            >
+                                Download Resume <Download size={16} />
+                            </a>
                         </motion.div>
                     </div>
 
