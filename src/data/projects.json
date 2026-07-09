@@ -93,7 +93,7 @@
         "video": null,
         "summary": "AI-powered interview practice platform — users speak answers, get real-time Gemini API feedback, and track performance across custom interview sessions.",
         "description": "A developer side-project that combines speech-to-text input with Gemini API analysis to simulate real interview sessions. Users select a topic or role, answer questions verbally, and receive structured AI feedback on their response quality, relevance, and clarity. Built with Next.js and Node.js for the full-stack layer, the Web Speech API for voice capture, and Google's Gemini API for answer evaluation. The project was an exercise in working with LLM APIs, managing real-time audio input, and building a clean feedback UX.",
-        "link": null,
+        "link": "https://ai-interview-frontend-efei.onrender.com",
         "featured": false,
         "techStack": [
             "Next.js",
