@@ -86,10 +86,7 @@ export default function Hero() {
               <span className="text-accent inline-block h-[1.2em] whitespace-nowrap overflow-hidden">
                 <Typewriter
                   options={{
-                    strings: [
-                      "& MERN Stack Dev",
-                      "& Next.js Specialist",
-                    ],
+                    strings: ["& MERN Stack Dev", "& Next.js Specialist"],
                     autoStart: true,
                     loop: true,
                     delay: 50,
@@ -182,7 +179,7 @@ export default function Hero() {
                   <div className="absolute inset-0 bg-accent rounded-full animate-pulse opacity-20 scale-110" />
                   <div className="relative w-full h-full rounded-full border-4 border-accent overflow-hidden bg-background shadow-inner">
                     <Image
-                      src="/vaibhav-goswami.webp"
+                      src="/vaibhav-goswami.jpg"
                       alt="Vaibhav Goswami"
                       width={200}
                       height={200}

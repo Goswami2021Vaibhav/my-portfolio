@@ -1,12 +1,12 @@
-'use client'
+"use client";
 
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import { ArrowUpRight, Heart } from 'lucide-react'
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowUpRight, Heart } from "lucide-react";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   const footerLinks = [
     {
@@ -16,33 +16,44 @@ export default function Footer() {
         { name: "Services", href: "/services" },
         { name: "Testimonials", href: "/testimonials" },
         { name: "Contact", href: "/contact" },
-      ]
+      ],
     },
     {
       title: "Socials",
       links: [
-        { name: "LinkedIn", href: process.env.NEXT_PUBLIC_LINKEDIN_LINK, icon: "/linkedin.svg" },
-        { name: "WhatsApp", href: process.env.NEXT_PUBLIC_WHATSAPP_LINK, icon: "/whatsapp.svg" },
-        { name: "Instagram", href: process.env.NEXT_PUBLIC_INSTAGRAM_LINK, icon: "/instagram.svg" },
-      ]
-    }
-  ]
+        {
+          name: "LinkedIn",
+          href: process.env.NEXT_PUBLIC_LINKEDIN_LINK,
+          icon: "/linkedin.svg",
+        },
+        {
+          name: "WhatsApp",
+          href: process.env.NEXT_PUBLIC_WHATSAPP_LINK,
+          icon: "/whatsapp.svg",
+        },
+        {
+          name: "Instagram",
+          href: process.env.NEXT_PUBLIC_INSTAGRAM_LINK,
+          icon: "/instagram.svg",
+        },
+      ],
+    },
+  ];
 
   return (
     <footer className="bg-background border-t border-white/5 pt-24 pb-12 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
-          
           {/* Brand Column */}
           <div className="md:col-span-5 space-y-6">
             <Link href="/" className="group flex items-center gap-3 w-fit">
               <div className="relative size-14 rounded-full overflow-hidden border-2 border-accent/20">
                 <Image
-                  src="/vaibhav-goswami.webp"
+                  src="/vaibhav-goswami.jpg"
                   alt="Vaibhav Goswami"
                   fill
                   className="object-cover"
-                  sizes='56px'
+                  sizes="56px"
                 />
               </div>
               <div className="flex flex-col items-start justify-center text-left leading-[0.85]">
@@ -55,7 +66,10 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-zinc-500 max-w-sm text-sm leading-relaxed">
-             Specializing in MERN stack development, scalable REST APIs, AI-powered applications, ERP systems, and modern e-commerce platforms. Let&apos;s build software that delivers real business value.
+              Specializing in MERN stack development, scalable REST APIs,
+              AI-powered applications, ERP systems, and modern e-commerce
+              platforms. Let&apos;s build software that delivers real business
+              value.
             </p>
           </div>
 
@@ -69,15 +83,24 @@ export default function Footer() {
                 <ul className="space-y-4">
                   {section.links.map((link) => (
                     <li key={link.name}>
-                      <Link 
+                      <Link
                         href={link.href}
                         className="text-zinc-500 hover:text-accent transition-colors text-sm flex items-center gap-2 group w-fit"
                       >
                         {link.icon && (
-                          <Image src={link.icon} alt={link.name} width={16} height={16} className="w-4 h-4 transition-all" />
+                          <Image
+                            src={link.icon}
+                            alt={link.name}
+                            width={16}
+                            height={16}
+                            className="w-4 h-4 transition-all"
+                          />
                         )}
                         {link.name}
-                        <ArrowUpRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <ArrowUpRight
+                          size={14}
+                          className="opacity-0 group-hover:opacity-100 transition-opacity"
+                        />
                       </Link>
                     </li>
                   ))}
@@ -108,14 +131,17 @@ export default function Footer() {
           <p className="text-zinc-600 text-[10px] uppercase tracking-[0.3em] font-medium text-center">
             © {currentYear} Vaibhav Goswami. All rights reserved.
           </p>
-          
+
           <div className="flex items-center gap-2 text-zinc-600 text-[10px] uppercase tracking-[0.3em] font-medium">
             <span>Built with</span>
-            <Heart size={10} className="text-accent fill-accent animate-pulse" />
+            <Heart
+              size={10}
+              className="text-accent fill-accent animate-pulse"
+            />
             <span>in India</span>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

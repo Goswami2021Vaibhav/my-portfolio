@@ -149,7 +149,7 @@ export default function AboutPage() {
             <div className="p-8 rounded-[2.5rem] bg-zinc-900/40 border border-zinc-800 flex flex-col gap-6">
               <div className="relative w-20 h-20 rounded-2xl overflow-hidden border-2 border-accent/30">
                 <Image
-                  src="/vaibhav-goswami.webp"
+                  src="/vaibhav-goswami.jpg"
                   alt="Vaibhav Goswami"
                   fill
                   className="object-cover scale-110"
